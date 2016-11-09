@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/!svn/ver/32/gom/src/main/java/com/sqe/gom/app/impl
+END
+SwotServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/app/impl/SwotServiceImpl.java
+END
+SummaryServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/35/gom/src/main/java/com/sqe/gom/app/impl/SummaryServiceImpl.java
+END
+ReportConfigServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/31/gom/src/main/java/com/sqe/gom/app/impl/ReportConfigServiceImpl.java
+END
+MottoServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/app/impl/MottoServiceImpl.java
+END
+ProjectServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/app/impl/ProjectServiceImpl.java
+END
+GomQueryServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/app/impl/GomQueryServiceImpl.java
+END
+TrainingServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/app/impl/TrainingServiceImpl.java
+END
+HolidaysServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/app/impl/HolidaysServiceImpl.java
+END
+ProcessServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/36/gom/src/main/java/com/sqe/gom/app/impl/ProcessServiceImpl.java
+END
+UserServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/!svn/ver/36/gom/src/main/java/com/sqe/gom/app/impl/UserServiceImpl.java
+END
+ResponsibilityServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/!svn/ver/35/gom/src/main/java/com/sqe/gom/app/impl/ResponsibilityServiceImpl.java
+END
+AssetServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/32/gom/src/main/java/com/sqe/gom/app/impl/AssetServiceImpl.java
+END
+LogServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/app/impl/LogServiceImpl.java
+END
+MailServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/!svn/ver/25/gom/src/main/java/com/sqe/gom/app/impl/MailServiceImpl.java
+END
+GomServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/app/impl/GomServiceImpl.java
+END
+FixedTaskServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/app/impl/FixedTaskServiceImpl.java
+END
+ResourceServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/!svn/ver/22/gom/src/main/java/com/sqe/gom/app/impl/ResourceServiceImpl.java
+END
+MeetingServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/25/gom/src/main/java/com/sqe/gom/app/impl/MeetingServiceImpl.java
+END
+CommonServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/app/impl/CommonServiceImpl.java
+END
+FileManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/app/impl/FileManagerImpl.java
+END
+ZtreeServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/36/gom/src/main/java/com/sqe/gom/app/impl/ZtreeServiceImpl.java
+END

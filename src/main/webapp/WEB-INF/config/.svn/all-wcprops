@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/!svn/ver/30/gom/src/main/webapp/WEB-INF/config
+END
+gom-service.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/30/gom/src/main/webapp/WEB-INF/config/gom-service.xml
+END
+gom-servlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/30/gom/src/main/webapp/WEB-INF/config/gom-servlet.xml
+END
+gom-security.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/37/gom/src/main/webapp/WEB-INF/config/gom-security.xml
+END

@@ -1,0 +1,14 @@
+ename.required=\u82f1\u6587\u540d\u79f0\u4e0d\u80fd\u4e3a\u7a7a
+cname.required=\u4e2d\u6587\u540d\u79f0\u4e0d\u80fd\u4e3a\u7a7a
+type.required=\u8bf7\u9009\u62e9\u7ec4\u7c7b\u578b
+
+#file manager
+error.upload.filemax=\u6587\u4ef6\u6700\u5927\u4e0d\u80fd\u8d85\u8fc7 {0} MB
+error.upload.forbiddenFile=\u4f60\u4ec5\u5141\u8bb8\u4e0a\u4f20: {0} \u7c7b\u578b\u7684\u6587\u4ef6
+error.upload.badPath=\u4e0a\u4f20\u8def\u5f84\u6709\u8bef
+
+
+index.task=Today need to do
+index.leave=To deal with leave list
+index.entry=To review the new staff members
+index.departure=Exit audit

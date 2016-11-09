@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/!svn/ver/31/gom/src/test/java/com/sqe/gom/dao
+END
+TrainingDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/dao/TrainingDaoTest.java
+END
+CategoryDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/dao/CategoryDaoTest.java
+END
+UserDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/dao/UserDAOTest.java
+END
+ResponsibilityDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/dao/ResponsibilityDaoTest.java
+END
+AssetDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/dao/AssetDaoTest.java
+END
+ProductDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/dao/ProductDaoTest.java
+END
+ResourceDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/31/gom/src/test/java/com/sqe/gom/dao/ResourceDaoTest.java
+END
+ExperienceDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/dao/ExperienceDaoTest.java
+END
+LeaveDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/dao/LeaveDAOTest.java
+END
+PersistenceBpmTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/dao/PersistenceBpmTest.java
+END
+TaskDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/dao/TaskDaoTest.java
+END
+ConfigDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/dao/ConfigDAOTest.java
+END
+ProjectDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/dao/ProjectDaoTest.java
+END
+LoginDAOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/dao/LoginDAOTest.java
+END
+GroupTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/dao/GroupTest.java
+END
+BorrowDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/dao/BorrowDaoTest.java
+END

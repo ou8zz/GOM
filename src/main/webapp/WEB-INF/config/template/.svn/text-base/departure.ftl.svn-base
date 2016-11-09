@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>${dep.userDpt} ${dep.ename}的离职单 -${company}</title>
+<style type="text/css">
+body{font:0.8em/150% Arial,sans-serif,simsung,Verdana,Tahoma,Helvetica;}
+.departure_tb{width:600px;border-collapse:collapse;border-left:#C8B9AE solid 1px;border-top:#C8B9AE solid 1px;font-size:1em;}
+.departure_tb td,.departure_tb th{border-right:#C8B9AE solid 1px;border-bottom:#C8B9AE solid 1px;padding:10px 10px 6px;}
+.td_bg{background-color:#D7D1CB;}
+.departure_tb caption{font-size:1.2em;font-weight:bold;}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="departure_tb" summary="${subject}">
+<caption>${company} - 职员离职单</caption>
+  <tr class="td_bg">
+    <th rowspan="2" scope="col" width="23%">离职人</th>
+    <td scope="col" width="20%" align="center">部门</td>
+    <td scope="col" width="17%" align="center">姓名</td>
+    <td scope="col" width="20%" align="center">工号</td>
+    <td scope="col" width="20%" align="center">职务</td>
+  </tr>
+  <tr>
+    <td>${dep.userDpt}</td>
+    <td>${dep.ename}(${dep.cname})</td>
+    <td>${dep.jobNo}</td>
+    <td>${dep.userPst}</td>
+  </tr>
+  <tr>
+    <td colspan="5">&nbsp;</td>
+  </tr>
+  <tr>
+    <th style="color:#F00" class="td_bg">批复离职时间</th>
+    <td colspan="4">${(dep.exitDate?date)?string("yyyy-MM-dd")}</td>
+  </tr>
+  <tr>
+    <th colspan="6">&nbsp;</th>
+  </tr>
+   <tr class="td_bg">
+    <th rowspan="2">工作接收人</th>
+    <td align="center">部门</td>
+    <td align="center">姓名</td>
+    <td align="center">工号</td>
+    <td align="center">职务</td>
+  </tr>
+  <tr>
+    <td>${dep.recipientDpt}</td>
+    <td>${dep.recipient}</td>
+    <td>${dep.recipientJobNo}</td>
+    <td>${dep.recipientPst}</td>
+  </tr>
+  <tr>
+    <td colspan="5">&nbsp;</td>
+  </tr>
+  <tr class="td_bg">
+    <th colspan="5">工作交接</th>
+  </tr>
+  <tr>
+    <td colspan="5">${dep.handover}</td>
+  </tr>
+</table>
+</body>
+</html>

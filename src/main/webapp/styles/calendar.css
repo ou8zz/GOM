@@ -1,0 +1,26 @@
+body{margin:0px;padding:0px;text-align:left; overflow:auto}
+/*图片整合 */
+a.a_INDEX,.Top_B_arr,.sx_J_11,.sx_J_13,.sx_J_31,.sec_box_NOS input,.IND_T_L,.IND_T_R,.SER_Logo,.icon_d,.IND_M_ref,.IND_M_line .tit,a.T_r_close,.CAL_wid_LT,.CAL_wid_LR,.CAL_LN a,.ico_bY,.ico_bX,.cs_bot a.on,.cy_ses_line_TB,.hb_r_tab td a.a_k,.hb_r_tab td a.a_g,a.a_syt,a.a_xyt,.xzbg .CC000EC,.xz_info_line,.WZ_tit_W,.WZ_CH,.lieche_tab td a.a_k,.lieche_tab td a.a_g,td a.a_cy_ser{background-image:url(../images/bg.gif);background-repeat:no-repeat}
+
+/*万年历*/
+.CAL_wid{width:340px;height:auto;border:#A9C8CE 1px solid; border-top-width:0px; position:relative; margin-left: 1px; margin-bottom: 1px;}
+.CAL_wid_LT{ position:absolute; left:-1px; top:0px; width:5px; height:43px; background-position:-99px -165px}
+.CAL_wid_LR{ position:absolute; right:-1px; top:0px; width:5px; height:43px; background-position:-104px -165px}
+.CAL_wid_top{ height:43px; background-image:url(../images/Cal_bg_tit.gif); background-repeat:repeat-x}
+.CAL_LN{ height:18px; line-height:18px; background-color:#22AADF; margin:0px 1px}
+.CAL_LN a{ display:block; width:65px; height:18px; float:left; line-height:19px; overflow:hidden; color:#FFF; text-decoration:none}
+.CAL_LN a:hover{ background-color:#55BEE6; text-decoration:none}
+a.CAL_A1{ font-size:12px; text-indent:18px; background-position:-436px -85px}
+a.CAL_A2{ font-size:12px; text-indent:18px; background-position:-511px -85px}
+a.CAL_A3{ font-size:12px; width:35px; background-position:-579px -85px}
+a.CAL_A4{ font-size:12px; text-indent:10px; background-position:-611px -85px}
+a.CAL_A5{ font-size:12px; text-indent:10px; background-position:-684px -85px}
+.CAL_Az{ float:left; width:20px; height:18px}
+
+.wnl_div{ margin-top:-3px; margin-bottom:0px}
+.sundayr td{ background-color:#D3E9F3;font-size:20px; font-weight:bold; font-family:SimHei; text-align:center}
+.cal_day_NO{ text-align:center; line-height:28px; font-size:22px; font-family:Verdana, Arial, Helvetica, sans-serif; color:#666; font-weight:bold}
+.cal_day_jr{ text-align:center; line-height:14px; font-size:12px; color:#565656;}
+td.weekend_ms{ background-color:#F60; color:#FFF}
+.CAL_div{ margin:1px; }
+

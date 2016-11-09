@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/!svn/ver/34/gom/src/main/java/com/sqe/gom/dao
+END
+ReportDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/20/gom/src/main/java/com/sqe/gom/dao/ReportDAO.java
+END
+CategoryDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/CategoryDAO.java
+END
+ResponsibilityDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/ResponsibilityDAO.java
+END
+AssetDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/AssetDAO.java
+END
+ProductDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/32/gom/src/main/java/com/sqe/gom/dao/ProductDAO.java
+END
+LogDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/LogDAO.java
+END
+SwotConfigDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/SwotConfigDAO.java
+END
+ProcessInfoDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/32/gom/src/main/java/com/sqe/gom/dao/ProcessInfoDAO.java
+END
+LeaveDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/32/gom/src/main/java/com/sqe/gom/dao/LeaveDAO.java
+END
+TraceDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/32/gom/src/main/java/com/sqe/gom/dao/TraceDAO.java
+END
+SignatureDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/SignatureDAO.java
+END
+ReportConfigDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/ReportConfigDAO.java
+END
+ConfigDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/ConfigDAO.java
+END
+UserRespDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/UserRespDAO.java
+END
+BorrowDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/BorrowDAO.java
+END
+EducationDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/22/gom/src/main/java/com/sqe/gom/dao/EducationDAO.java
+END
+TrainingDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/TrainingDAO.java
+END
+GenericDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/GenericDAO.java
+END
+HolidaysDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/HolidaysDAO.java
+END
+UserDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/!svn/ver/32/gom/src/main/java/com/sqe/gom/dao/UserDAO.java
+END
+FixedTaskDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/FixedTaskDAO.java
+END
+AddressDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/7/gom/src/main/java/com/sqe/gom/dao/AddressDAO.java
+END
+ResourceDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/4/gom/src/main/java/com/sqe/gom/dao/ResourceDAO.java
+END
+ExperienceDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/ExperienceDAO.java
+END
+MeetingDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/MeetingDAO.java
+END
+ZtreeDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/35/gom/src/main/java/com/sqe/gom/dao/ZtreeDAO.java
+END
+AbnormalDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/28/gom/src/main/java/com/sqe/gom/dao/AbnormalDAO.java
+END
+DepartureDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/32/gom/src/main/java/com/sqe/gom/dao/DepartureDAO.java
+END
+GroupDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/32/gom/src/main/java/com/sqe/gom/dao/GroupDAO.java
+END
+SummaryDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/SummaryDAO.java
+END
+LieuDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/LieuDAO.java
+END
+MottoDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/MottoDAO.java
+END
+TaskDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/TaskDAO.java
+END
+ProjectDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/32/gom/src/main/java/com/sqe/gom/dao/ProjectDAO.java
+END
+LoginDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/32/gom/src/main/java/com/sqe/gom/dao/LoginDAO.java
+END

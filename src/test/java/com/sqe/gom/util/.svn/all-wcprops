@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/util
+END
+Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/util/Test.java
+END
+RegexUtilTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/util/RegexUtilTest.java
+END
+HtmToolsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/util/HtmToolsTest.java
+END
+BinarySearchTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/util/BinarySearchTest.java
+END
+JsonUtilsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/util/JsonUtilsTest.java
+END
+DateUtilTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/util/DateUtilTest.java
+END

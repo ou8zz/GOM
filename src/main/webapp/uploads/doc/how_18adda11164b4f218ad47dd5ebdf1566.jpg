@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?> <?mso-application progid="Word.Document"?> <w:wordDocument xmlns:aml="http://schemas.microsoft.com/aml/2001/core"  xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:mo="http://schemas.microsoft.com/office/mac/office/2008/main"  xmlns:ve="http://schemas.openxmlformats.org/markup-compatibility/2006"  xmlns:mv="urn:schemas-microsoft-com:mac:vml" xmlns:o="urn:schemas-microsoft-com:office:office"  xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word"  xmlns:w="http://schemas.microsoft.com/office/word/2003/wordml"  xmlns:wx="http://schemas.microsoft.com/office/word/2003/auxHint"  xmlns:wsp="http://schemas.microsoft.com/office/word/2003/wordml/sp2"  xmlns:sl="http://schemas.microsoft.com/schemaLibrary/2003/core"  w:macrosPresent="no" w:embeddedObjPresent="no" w:ocxPresent="no"  xml:space="preserve">  <w:ignoreSubtree w:val="http://schemas.microsoft.com/office/word/2003/wordml/sp2" />     <o:DocumentProperties>         <o:Title>Java2word title</o:Title> 
+        <o:Subject>Created by Java2word library</o:Subject> 
+        <o:Keywords>java2word, word document</o:Keywords> 
+        <o:Description></o:Description> 
+        <o:Category></o:Category> 
+        <o:Author>Leonardo Correa</o:Author>         <o:LastAuthor>Leonardo Correa</o:LastAuthor>         <o:Manager>Leonardo Correa</o:Manager> 
+        <o:Company>Java2word, coding for fun!</o:Company> 
+        <o:Revision>1</o:Revision>         <o:TotalTime>1</o:TotalTime>         <o:Created>2010-07-16T07:18:00Z</o:Created>         <o:LastSaved>2010-07-16T07:22:00Z</o:LastSaved>         <o:Pages>1</o:Pages>         <o:Words>0</o:Words>         <o:Characters>0</o:Characters>         <o:Bytes>1</o:Bytes> 
+        <o:Lines>1</o:Lines>         <o:Paragraphs>1</o:Paragraphs>         <o:CharactersWithSpaces>0</o:CharactersWithSpaces>         <o:Version>1</o:Version>     </o:DocumentProperties>     <w:fonts>         <w:defaultFonts w:ascii="Cambria" w:fareast="Cambria" w:h-ansi="Cambria" w:cs="Times New Roman"/>         <w:font w:name="Times New Roman">             <w:panose-1 w:val="02020603050405020304"/>             <w:charset w:val="00"/>             <w:family w:val="auto"/>             <w:pitch w:val="variable"/>             <w:sig w:usb-0="00000003" w:usb-1="00000000" w:usb-2="00000000" w:usb-3="00000000" w:csb-0="00000001" w:csb-1="00000000"/>         </w:font>         <w:font w:name="Calibri">             <w:panose-1 w:val="020F0502020204030204"/>             <w:charset w:val="00"/>             <w:family w:val="auto"/>             <w:pitch w:val="variable"/>             <w:sig w:usb-0="00000003" w:usb-1="00000000" w:usb-2="00000000" w:usb-3="00000000" w:csb-0="00000001" w:csb-1="00000000"/>         </w:font>         <w:font w:name="Cambria">             <w:panose-1 w:val="02040503050406030204"/>             <w:charset w:val="00"/>             <w:family w:val="auto"/>             <w:pitch w:val="variable"/>             <w:sig w:usb-0="00000003" w:usb-1="00000000" w:usb-2="00000000" w:usb-3="00000000" w:csb-0="00000001" w:csb-1="00000000"/>         </w:font>     </w:fonts>     <w:styles>         <w:versionOfBuiltInStylenames w:val="2"/>         <w:latentStyles w:defLockedState="off" w:latentStyleCount="276">             <w:lsdException w:name="Normal"/>             <w:lsdException w:name="heading 1"/>             <w:lsdException w:name="heading 2"/>             <w:lsdException w:name="heading 3"/>             <w:lsdException w:name="heading 4"/>             <w:lsdException w:name="heading 5"/>             <w:lsdException w:name="heading 6"/>             <w:lsdException w:name="heading 7"/>             <w:lsdException w:name="heading 8"/>             <w:lsdException w:name="heading 9"/>             <w:lsdException w:name="toc 1"/>             <w:lsdException w:name="toc 2"/>             <w:lsdException w:name="toc 3"/>             <w:lsdException w:name="toc 4"/>             <w:lsdException w:name="toc 5"/>             <w:lsdException w:name="toc 6"/>             <w:lsdException w:name="toc 7"/>             <w:lsdException w:name="toc 8"/>             <w:lsdException w:name="toc 9"/>             <w:lsdException w:name="caption"/>             <w:lsdException w:name="Title"/>             <w:lsdException w:name="Default Paragraph Font"/>             <w:lsdException w:name="Subtitle"/>             <w:lsdException w:name="Strong"/>             <w:lsdException w:name="Emphasis"/>             <w:lsdException w:name="Table Grid"/>             <w:lsdException w:name="Placeholder Text"/>             <w:lsdException w:name="No Spacing"/>             <w:lsdException w:name="Light Shading"/>             <w:lsdException w:name="Light List"/>             <w:lsdException w:name="Light Grid"/>             <w:lsdException w:name="Medium Shading 1"/>             <w:lsdException w:name="Medium Shading 2"/>             <w:lsdException w:name="Medium List 1"/>             <w:lsdException w:name="Medium List 2"/>             <w:lsdException w:name="Medium Grid 1"/>             <w:lsdException w:name="Medium Grid 2"/>             <w:lsdException w:name="Medium Grid 3"/>             <w:lsdException w:name="Dark List"/>             <w:lsdException w:name="Colorful Shading"/>             <w:lsdException w:name="Colorful List"/>             <w:lsdException w:name="Colorful Grid"/>             <w:lsdException w:name="Light Shading Accent 1"/>             <w:lsdException w:name="Light List Accent 1"/>             <w:lsdException w:name="Light Grid Accent 1"/>             <w:lsdException w:name="Medium Shading 1 Accent 1"/>             <w:lsdException w:name="Medium Shading 2 Accent 1"/>             <w:lsdException w:name="Medium List 1 Accent 1"/>             <w:lsdException w:name="Revision"/>             <w:lsdException w:name="List Paragraph"/>             <w:lsdException w:name="Quote"/>             <w:lsdException w:name="Intense Quote"/>             <w:lsdException w:name="Medium List 2 Accent 1"/>             <w:lsdException w:name="Medium Grid 1 Accent 1"/>             <w:lsdException w:name="Medium Grid 2 Accent 1"/>             <w:lsdException w:name="Medium Grid 3 Accent 1"/>             <w:lsdException w:name="Dark List Accent 1"/>             <w:lsdException w:name="Colorful Shading Accent 1"/>             <w:lsdException w:name="Colorful List Accent 1"/>             <w:lsdException w:name="Colorful Grid Accent 1"/>             <w:lsdException w:name="Light Shading Accent 2"/>             <w:lsdException w:name="Light List Accent 2"/>             <w:lsdException w:name="Light Grid Accent 2"/>             <w:lsdException w:name="Medium Shading 1 Accent 2"/>             <w:lsdException w:name="Medium Shading 2 Accent 2"/>             <w:lsdException w:name="Medium List 1 Accent 2"/>             <w:lsdException w:name="Medium List 2 Accent 2"/>             <w:lsdException w:name="Medium Grid 1 Accent 2"/>             <w:lsdException w:name="Medium Grid 2 Accent 2"/>             <w:lsdException w:name="Medium Grid 3 Accent 2"/>             <w:lsdException w:name="Dark List Accent 2"/>             <w:lsdException w:name="Colorful Shading Accent 2"/>             <w:lsdException w:name="Colorful List Accent 2"/>             <w:lsdException w:name="Colorful Grid Accent 2"/>             <w:lsdException w:name="Light Shading Accent 3"/>             <w:lsdException w:name="Light List Accent 3"/>             <w:lsdException w:name="Light Grid Accent 3"/>             <w:lsdException w:name="Medium Shading 1 Accent 3"/>             <w:lsdException w:name="Medium Shading 2 Accent 3"/>             <w:lsdException w:name="Medium List 1 Accent 3"/>             <w:lsdException w:name="Medium List 2 Accent 3"/>             <w:lsdException w:name="Medium Grid 1 Accent 3"/>             <w:lsdException w:name="Medium Grid 2 Accent 3"/>             <w:lsdException w:name="Medium Grid 3 Accent 3"/>             <w:lsdException w:name="Dark List Accent 3"/>             <w:lsdException w:name="Colorful Shading Accent 3"/>             <w:lsdException w:name="Colorful List Accent 3"/>             <w:lsdException w:name="Colorful Grid Accent 3"/>             <w:lsdException w:name="Light Shading Accent 4"/>             <w:lsdException w:name="Light List Accent 4"/>             <w:lsdException w:name="Light Grid Accent 4"/>             <w:lsdException w:name="Medium Shading 1 Accent 4"/>             <w:lsdException w:name="Medium Shading 2 Accent 4"/>             <w:lsdException w:name="Medium List 1 Accent 4"/>             <w:lsdException w:name="Medium List 2 Accent 4"/>             <w:lsdException w:name="Medium Grid 1 Accent 4"/>             <w:lsdException w:name="Medium Grid 2 Accent 4"/>             <w:lsdException w:name="Medium Grid 3 Accent 4"/>             <w:lsdException w:name="Dark List Accent 4"/>             <w:lsdException w:name="Colorful Shading Accent 4"/>             <w:lsdException w:name="Colorful List Accent 4"/>             <w:lsdException w:name="Colorful Grid Accent 4"/>             <w:lsdException w:name="Light Shading Accent 5"/>             <w:lsdException w:name="Light List Accent 5"/>             <w:lsdException w:name="Light Grid Accent 5"/>             <w:lsdException w:name="Medium Shading 1 Accent 5"/>             <w:lsdException w:name="Medium Shading 2 Accent 5"/>             <w:lsdException w:name="Medium List 1 Accent 5"/>             <w:lsdException w:name="Medium List 2 Accent 5"/>             <w:lsdException w:name="Medium Grid 1 Accent 5"/>             <w:lsdException w:name="Medium Grid 2 Accent 5"/>             <w:lsdException w:name="Medium Grid 3 Accent 5"/>             <w:lsdException w:name="Dark List Accent 5"/>             <w:lsdException w:name="Colorful Shading Accent 5"/>             <w:lsdException w:name="Colorful List Accent 5"/>             <w:lsdException w:name="Colorful Grid Accent 5"/>             <w:lsdException w:name="Light Shading Accent 6"/>             <w:lsdException w:name="Light List Accent 6"/>             <w:lsdException w:name="Light Grid Accent 6"/>             <w:lsdException w:name="Medium Shading 1 Accent 6"/>             <w:lsdException w:name="Medium Shading 2 Accent 6"/>             <w:lsdException w:name="Medium List 1 Accent 6"/>             <w:lsdException w:name="Medium List 2 Accent 6"/>             <w:lsdException w:name="Medium Grid 1 Accent 6"/>             <w:lsdException w:name="Medium Grid 2 Accent 6"/>             <w:lsdException w:name="Medium Grid 3 Accent 6"/>             <w:lsdException w:name="Dark List Accent 6"/>             <w:lsdException w:name="Colorful Shading Accent 6"/>             <w:lsdException w:name="Colorful List Accent 6"/>             <w:lsdException w:name="Colorful Grid Accent 6"/>             <w:lsdException w:name="Subtle Emphasis"/>             <w:lsdException w:name="Intense Emphasis"/>             <w:lsdException w:name="Subtle Reference"/>             <w:lsdException w:name="Intense Reference"/>             <w:lsdException w:name="Book Title"/>             <w:lsdException w:name="Bibliography"/>             <w:lsdException w:name="TOC Heading"/>         </w:latentStyles>         <w:style w:type="paragraph" w:default="on" w:styleId="Normal">             <w:name w:val="Normal"/>             <w:rsid w:val="00D711DA"/>             <w:rPr>                 <wx:font wx:val="Cambria"/>                 <w:sz w:val="24"/>                 <w:sz-cs w:val="24"/>                 <w:lang w:val="EN-AU" w:fareast="EN-US" w:bidi="AR-SA"/>             </w:rPr>         </w:style>         <w:style w:type="paragraph" w:styleId="Heading1">             <w:name w:val="heading 1"/>             <wx:uiName wx:val="Heading 1"/>             <w:basedOn w:val="Normal"/>             <w:next w:val="Normal"/>             <w:link w:val="Heading1Char"/>             <w:rsid w:val="00401F80"/>             <w:pPr>                 <w:keepNext/>                 <w:keepLines/>                 <w:spacing w:before="480"/>                 <w:outlineLvl w:val="0"/>             </w:pPr>             <w:rPr>                 <w:rFonts w:ascii="Calibri" w:fareast="Times New Roman" w:h-ansi="Calibri"/>                 <wx:font wx:val="Calibri"/>                 <w:b/>                 <w:b-cs/>                 <w:color w:val="345A8A"/>                 <w:sz w:val="32"/>                 <w:sz-cs w:val="32"/>             </w:rPr>         </w:style>         <w:style w:type="paragraph" w:styleId="Heading2">             <w:name w:val="heading 2"/>             <wx:uiName wx:val="Heading 2"/>             <w:basedOn w:val="Normal"/>             <w:next w:val="Normal"/>             <w:link w:val="Heading2Char"/>             <w:rsid w:val="00401F80"/>             <w:pPr>                 <w:keepNext/>                 <w:keepLines/>                 <w:spacing w:before="200"/>                 <w:outlineLvl w:val="1"/>             </w:pPr>             <w:rPr>                 <w:rFonts w:ascii="Calibri" w:fareast="Times New Roman" w:h-ansi="Calibri"/>                 <wx:font wx:val="Calibri"/>                 <w:b/>                 <w:b-cs/>                 <w:color w:val="4F81BD"/>                 <w:sz w:val="26"/>                 <w:sz-cs w:val="26"/>             </w:rPr>         </w:style>         <w:style w:type="paragraph" w:styleId="Heading3">             <w:name w:val="heading 3"/>             <wx:uiName wx:val="Heading 3"/>             <w:basedOn w:val="Normal"/>             <w:next w:val="Normal"/>             <w:link w:val="Heading3Char"/>             <w:rsid w:val="00401F80"/>             <w:pPr>                 <w:keepNext/>                 <w:keepLines/>                 <w:spacing w:before="200"/>                 <w:outlineLvl w:val="2"/>             </w:pPr>             <w:rPr>                 <w:rFonts w:ascii="Calibri" w:fareast="Times New Roman" w:h-ansi="Calibri"/>                 <wx:font wx:val="Calibri"/>                 <w:b/>                 <w:b-cs/>                 <w:color w:val="4F81BD"/>             </w:rPr>         </w:style>         <w:style w:type="character" w:default="on" w:styleId="DefaultParagraphFont">             <w:name w:val="Default Paragraph Font"/>         </w:style>         <w:style w:type="table" w:default="on" w:styleId="TableNormal">             <w:name w:val="Normal Table"/>             <wx:uiName wx:val="Table Normal"/>             <w:rPr>                 <wx:font wx:val="Cambria"/>                 <w:lang w:val="EN-AU" w:fareast="EN-US" w:bidi="AR-SA"/>             </w:rPr>             <w:tblPr>                 <w:tblInd w:w="0" w:type="dxa"/>                 <w:tblCellMar>                     <w:top w:w="0" w:type="dxa"/>                     <w:left w:w="108" w:type="dxa"/>                     <w:bottom w:w="0" w:type="dxa"/>                     <w:right w:w="108" w:type="dxa"/>                 </w:tblCellMar>             </w:tblPr>         </w:style>         <w:style w:type="list" w:default="on" w:styleId="NoList">             <w:name w:val="No List"/>         </w:style>         <w:style w:type="character" w:styleId="Heading1Char">             <w:name w:val="Heading 1 Char"/>             <w:basedOn w:val="DefaultParagraphFont"/>             <w:link w:val="Heading1"/>             <w:rsid w:val="00401F80"/>             <w:rPr>                 <w:rFonts w:ascii="Calibri" w:fareast="Times New Roman" w:h-ansi="Calibri" w:cs="Times New Roman"/>                 <w:b/>                 <w:b-cs/>                 <w:color w:val="345A8A"/>                 <w:sz w:val="32"/>                 <w:sz-cs w:val="32"/>                 <w:lang w:val="EN-AU"/>             </w:rPr>         </w:style>         <w:style w:type="character" w:styleId="Heading2Char">             <w:name w:val="Heading 2 Char"/>             <w:basedOn w:val="DefaultParagraphFont"/>             <w:link w:val="Heading2"/>             <w:rsid w:val="00401F80"/>             <w:rPr>                 <w:rFonts w:ascii="Calibri" w:fareast="Times New Roman" w:h-ansi="Calibri" w:cs="Times New Roman"/>                 <w:b/>                 <w:b-cs/>                 <w:color w:val="4F81BD"/>                 <w:sz w:val="26"/>                 <w:sz-cs w:val="26"/>                 <w:lang w:val="EN-AU"/>             </w:rPr>         </w:style>         <w:style w:type="character" w:styleId="Heading3Char">             <w:name w:val="Heading 3 Char"/>             <w:basedOn w:val="DefaultParagraphFont"/>             <w:link w:val="Heading3"/>             <w:rsid w:val="00401F80"/>             <w:rPr>                 <w:rFonts w:ascii="Calibri" w:fareast="Times New Roman" w:h-ansi="Calibri" w:cs="Times New Roman"/>                 <w:b/>                 <w:b-cs/>                 <w:color w:val="4F81BD"/>                 <w:lang w:val="EN-AU"/>             </w:rPr>         </w:style>         <w:style w:type="character" w:styleId="Hyperlink">j            <w:name w:val="Hyperlink"/>             <w:basedOn w:val="DefaultParagraphFont"/>             <w:rsid w:val="00A30FBB"/>             <w:rPr>                 <w:color w:val="0000FF"/>                 <w:u w:val="single"/>             </w:rPr>         </w:style>         <w:style w:type="list" w:default="on" w:styleId="NoList">             <w:name w:val="No List"/>         </w:style>         <w:style w:type="paragraph" w:styleId="Header">             <w:name w:val="header"/>             <wx:uiName wx:val="Header"/>             <w:basedOn w:val="Normal"/>             <w:link w:val="HeaderChar"/>             <w:rsid w:val="00B5709B"/>             <w:pPr>                 <w:tabs>                     <w:tab w:val="center" w:pos="4320"/>                     <w:tab w:val="right" w:pos="8640"/>                 </w:tabs>             </w:pPr>             <w:rPr>                 <wx:font wx:val="Cambria"/>             </w:rPr>         </w:style>         <w:style w:type="character" w:styleId="HeaderChar">             <w:name w:val="Header Char"/>             <w:basedOn w:val="DefaultParagraphFont"/>             <w:link w:val="Header"/>             <w:rsid w:val="00B5709B"/>             <w:rPr>                 <w:sz w:val="24"/>                 <w:sz-cs w:val="24"/>             </w:rPr>         </w:style>         <w:style w:type="paragraph" w:styleId="Footer">             <w:name w:val="footer"/>             <wx:uiName wx:val="Footer"/>             <w:basedOn w:val="Normal"/>             <w:link w:val="FooterChar"/>             <w:rsid w:val="00B5709B"/>             <w:pPr>                 <w:tabs>                     <w:tab w:val="center" w:pos="4320"/>                     <w:tab w:val="right" w:pos="8640"/>                 </w:tabs>             </w:pPr>             <w:rPr>                 <wx:font wx:val="Cambria"/>             </w:rPr>         </w:style>         <w:style w:type="character" w:styleId="FooterChar">             <w:name w:val="Footer Char"/>             <w:basedOn w:val="DefaultParagraphFont"/>             <w:link w:val="Footer"/>             <w:rsid w:val="00B5709B"/>             <w:rPr>                 <w:sz w:val="24"/>                 <w:sz-cs w:val="24"/>             </w:rPr>         </w:style>         <w:style w:type="character" w:styleId="PageNumber">             <w:name w:val="page number"/>             <wx:uiName wx:val="Page Number"/>             <w:basedOn w:val="DefaultParagraphFont"/>             <w:rsid w:val="009F65CC"/>         </w:style>     </w:styles>     <w:docPr>         <w:view w:val="print"/>         <w:zoom w:percent="100"/>         <w:proofState w:spelling="clean" w:grammar="clean"/>         <w:defaultTabStop w:val="720"/>         <w:drawingGridHorizontalSpacing w:val="360"/>         <w:drawingGridVerticalSpacing w:val="360"/>         <w:displayHorizontalDrawingGridEvery w:val="0"/>         <w:displayVerticalDrawingGridEvery w:val="0"/>         <w:punctuationKerning/>         <w:characterSpacingControl w:val="DontCompress"/>         <w:allowPNG/>         <w:doNotSaveWebPagesAsSingleFile/>         <w:savePreviewPicture/>         <w:validateAgainstSchema/>         <w:saveInvalidXML w:val="off"/>         <w:ignoreMixedContent w:val="off"/>         <w:alwaysShowPlaceholderText w:val="off"/>         <w:compat>             <w:breakWrappedTables/>             <w:snapToGridInCell/>             <w:wrapTextWithPunct/>             <w:useAsianBreakRules/>             <w:dontGrowAutofit/>         </w:compat>         <wsp:rsids>             <wsp:rsidRoot wsp:val="00401F80"/>         </wsp:rsids>     </w:docPr> 
+<w:body>
+
+<w:p wsp:rsidR="008979E8" wsp:rsidRDefault="008979E8"/>
+	<w:p wsp:rsidR="008979E8" wsp:rsidRDefault="00000000">
+		
+  <w:pPr>  <w:jc w:val="left"/> 
+           
+     <w:ind w:left="0"/>
+           
+   
+     </w:pPr>
+		
+		
+		<w:r>
+			
+			<w:t>2013-01-04
+
+收到中药后清点数量、询问Roger成品中药的数量。
+2.	用信封将计算出来的总金额装好并密封，把信封放在中药袋里面，封口。
+3.	电话联系：021-58404191，询问工作人员收药到煎药的流程，估算时间。
+4.	邮件/电话询问Roger并告知相关情况取决一种合适的方式。
+a、	亲自送过去，对方当天可以收件。
+b、	如果时间允许邮寄过去。
+5.	地址：上海市浦东新区乳山路79号 收件人：养和堂乳山路店 联系方式：021-58404191
+6.	多煮包，多付费，多煮分数问Roger
+7.	询问中药什么时候煮什么时候煮好，寄回后告知Roger 此事
+
+</w:t>
+		</w:r>
+	</w:p>
+<w:sectPr wsp:rsidR="00DB1FE5" wsp:rsidSect="00471A86">
+
+	<w:hdr w:type="odd">
+
+	<w:tbl> 
+            <w:tblPr> 
+                <w:tblW w:w="0" w:type="auto"/> 
+                <w:tblBorders> 
+                    <w:top w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="000000"/> 
+                    <w:left w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="000000"/> 
+                    <w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="000000"/> 
+                    <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="000000"/> 
+                    <w:insideH w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="000000"/> 
+                    <w:insideV w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="000000"/> 
+                </w:tblBorders> 
+                <w:tblLook w:val="00BF"/> 
+            </w:tblPr> 
+            <w:tblGrid> 
+                <w:gridCol w:w="4258"/> 
+                <w:gridCol w:w="4258"/> 
+            </w:tblGrid> 
+ <w:tr>
+		<w:tc>
+			<w:p wsp:rsidR="008979E8" wsp:rsidRDefault="00000000">
+		
+  <w:pPr>  <w:jc w:val="left"/> 
+           
+     <w:ind w:left="0"/>
+           
+   
+     </w:pPr>
+		
+		
+		<w:r>
+			
+	 <w:rPr>
+            	<w:b/>
+               <w:sz w:val="24" />
+
+               <w:sz-cs w:val="24" />
+
+	 </w:rPr>
+			<w:t>文件名称</w:t>
+		</w:r>
+	</w:p>
+		</w:tc>
+		<w:tc>
+		<w:tcPr>
+            	<w:gridSpan w:val="4"/></w:tcPr>
+	<w:p wsp:rsidR="008979E8" wsp:rsidRDefault="00000000">
+		
+  <w:pPr>  <w:jc w:val="center"/> 
+           
+     <w:ind w:left="0"/>
+           
+   
+     </w:pPr>
+		
+		
+		<w:r>
+			
+			<w:t>代煎中药(如何做)</w:t>
+		</w:r>
+	</w:p>
+		</w:tc>
+     <w:tc>
+        	<w:p wsp:rsidR="008979E8" wsp:rsidRDefault="00000000">
+		
+  <w:pPr>  <w:jc w:val="left"/> 
+           
+     <w:ind w:left="0"/>
+           
+   
+     </w:pPr>
+		
+		
+		<w:r>
+			
+			<w:t>
+<w:pict>
+	<v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">		<v:stroke joinstyle="miter"/>		<v:formulas>			<v:f eqn="if lineDrawn pixelLineWidth 0"/>			<v:f eqn="sum @0 1 0"/><v:f eqn="sum 0 0 @1"/>			<v:f eqn="prod @2 1 2"/>			<v:f eqn="prod @3 21600 pixelWidth"/>			<v:f eqn="prod @3 21600 pixelHeight"/>			<v:f eqn="sum @0 0 1"/>			<v:f eqn="prod @6 1 2"/>			<v:f eqn="prod @7 21600 pixelWidth"/>			<v:f eqn="sum @8 21600 0"/>			<v:f eqn="prod @7 21600 pixelHeight"/>			<v:f eqn="sum @10 21600 0"/>		</v:formulas>		<v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>		<o:lock v:ext="edit" aspectratio="t"/>	</v:shapetype>
+<w:binData w:name="wordml://1364520128072E:\workspace\gom\src\main\webapp\images\sqe_logo.jpg" xml:space="preserve">/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a
+HBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIy
+MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAtAHcDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDB8LQ+
+IvFnij+zodYv44FLSTP55+WPceMfyq1rWvJZeJZ9Gl/tK2s4JFhacXLeaf8Ab+lb3wTurZde1y2k
+Kfa5CGXPVlBOf1rsviB4BtvFFqbu3xFqsK7opQuC+OzV6PtFGpaS0MbaHmh03W9b+IEug6LrF/HZ
+wqrPO05+VMZ3fWutv7CLRvFuh+GEmvbn7ZG0lxM90wYY9OaufBqyf+xb7V71g97d3BjlcD+7wBTH
+2aj+0EgHKWOn4bPqf/11jUn7zS2LS0ON+JOkax4MuI7i11vUG0244UPOS0bDkrXZeGPB8PiHwxY6
+tPqmsQSXEQdkW6IFL8djEfBCI+PNe4RUz655rs9BhXS/BVmhIAitAST0Hy5pynemu4ranjmk3+na
+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
+st60PlASMmxV6cAKP50VzVqinK6LSsf/2Q==</w:binData>
+	<v:shape id="_x0000_i1026" type="#_x0000_t75" style="width:80pt;height:40pt"><v:imagedata src="wordml://1364520128072E:\workspace\gom\src\main\webapp\images\sqe_logo.jpg" o:title="E:\workspace\gom\src\main\webapp\images\sqe_logo.jpg"/>
+	</v:shape>
+</w:pict></w:t>
+		</w:r>
+	</w:p>
+      </w:tc>
+  </w:tr>
+ <w:tr>
+     <w:tc>
+        	<w:p wsp:rsidR="008979E8" wsp:rsidRDefault="00000000">
+		
+  <w:pPr>  <w:jc w:val="left"/> 
+           
+     <w:ind w:left="0"/>
+           
+   
+     </w:pPr>
+		
+		
+		<w:r>
+			
+			<w:t>创建日期</w:t>
+		</w:r>
+	</w:p>
+      </w:tc>
+     <w:tc>
+        	<w:p wsp:rsidR="008979E8" wsp:rsidRDefault="00000000">
+		
+  <w:pPr>  <w:jc w:val="left"/> 
+           
+     <w:ind w:left="0"/>
+           
+   
+     </w:pPr>
+		
+		
+		<w:r>
+			
+			<w:t>2013-01-04</w:t>
+		</w:r>
+	</w:p>
+      </w:tc>
+     <w:tc>
+        	<w:p wsp:rsidR="008979E8" wsp:rsidRDefault="00000000">
+		
+  <w:pPr>  <w:jc w:val="left"/> 
+           
+     <w:ind w:left="0"/>
+           
+   
+     </w:pPr>
+		
+		
+		<w:r>
+			
+			<w:t>更新日期</w:t>
+		</w:r>
+	</w:p>
+      </w:tc>
+     <w:tc>
+        	<w:p wsp:rsidR="008979E8" wsp:rsidRDefault="00000000">
+		
+  <w:pPr>  <w:jc w:val="left"/> 
+           
+     <w:ind w:left="0"/>
+           
+   
+     </w:pPr>
+		
+		
+		<w:r>
+			
+			<w:t>2013-01-04</w:t>
+		</w:r>
+	</w:p>
+      </w:tc>
+     <w:tc>
+        	<w:p wsp:rsidR="008979E8" wsp:rsidRDefault="00000000">
+		
+  <w:pPr>  <w:jc w:val="left"/> 
+           
+     <w:ind w:left="0"/>
+           
+   
+     </w:pPr>
+		
+		
+		<w:r>
+			
+			<w:t>版本</w:t>
+		</w:r>
+	</w:p>
+      </w:tc>
+		<w:tc>
+			<w:p wsp:rsidR="008979E8" wsp:rsidRDefault="00000000">
+		
+  <w:pPr>  <w:jc w:val="center"/> 
+           
+     <w:ind w:left="0"/>
+           
+   
+     </w:pPr>
+		
+		
+		<w:r>
+			
+			<w:t>V-1.1</w:t>
+		</w:r>
+	</w:p>
+		</w:tc>
+  </w:tr>
+
+	</w:tbl>
+	</w:hdr>
+	<w:ftr w:type="odd">
+	<w:p wsp:rsidR="008979E8" wsp:rsidRDefault="00000000">
+		
+  <w:pPr>  <w:jc w:val="left"/> 
+           
+     <w:ind w:left="0"/>
+           
+   
+     </w:pPr>
+		
+		
+		<w:r>
+			
+			<w:t>SQE SERVICE INC.  </w:t>
+		</w:r>
+	</w:p>
+	<w:p wsp:rsidR="008979E8" wsp:rsidRDefault="00000000">
+		
+  <w:pPr>  <w:jc w:val="left"/> 
+           
+     <w:ind w:left="0"/>
+           
+   
+     </w:pPr>
+		
+		
+		<w:r>
+			
+			<w:t>Tel: +862150499035 or 862150499065               Fax: +86-21-50499037</w:t>
+		</w:r>
+	</w:p>
+	<w:p wsp:rsidR="008979E8" wsp:rsidRDefault="00000000">
+		
+  <w:pPr>  <w:jc w:val="left"/> 
+           
+     <w:ind w:left="0"/>
+           
+   
+     </w:pPr>
+		
+		
+		<w:r>
+			
+			<w:t>E-mail:                           www.sqeservice.com</w:t>
+		</w:r>
+	</w:p>
+                <wx:pBdrGroup> 
+                    <wx:apo> 
+                        <wx:jc wx:val="right"/> 
+                    </wx:apo> 
+                    <w:p wsp:rsidR="00595002" wsp:rsidRDefault="00595002" wsp:rsidP="00165A2B"> 
+                        <w:pPr> 
+                            <w:pStyle w:val="Footer"/> 
+                            <w:framePr w:wrap="around" w:vanchor="text" w:hanchor="margin" w:x-align="right" w:y="1"/> 
+                            <w:rPr> 
+                                <w:rStyle w:val="PageNumber"/> 
+                            </w:rPr> 
+                        </w:pPr> 
+                        <w:r> 
+                            <w:rPr> 
+                                <w:rStyle w:val="PageNumber"/> 
+                            </w:rPr> 
+                            <w:fldChar w:fldCharType="begin"/> 
+                        </w:r> 
+                        <w:r> 
+                            <w:rPr> 
+                                <w:rStyle w:val="PageNumber"/> 
+                            </w:rPr> 
+                            <w:instrText>PAGE  </w:instrText> 
+                        </w:r> 
+                        <w:r> 
+                            <w:rPr> 
+                                <w:rStyle w:val="PageNumber"/> 
+                            </w:rPr> 
+                            <w:fldChar w:fldCharType="separate"/> 
+                        </w:r> 
+                        <w:r> 
+                            <w:rPr> 
+                                <w:rStyle w:val="PageNumber"/> 
+                                <w:noProof/> 
+                            </w:rPr> 
+                            <w:t>2</w:t> 
+                        </w:r> 
+                        <w:r> 
+                            <w:rPr> 
+                                <w:rStyle w:val="PageNumber"/> 
+                            </w:rPr> 
+                            <w:fldChar w:fldCharType="end"/> 
+                        </w:r> 
+                    </w:p> 
+                </wx:pBdrGroup> 
+
+	</w:ftr>
+</w:sectPr>
+</w:body>
+</w:wordDocument>

@@ -1,0 +1,765 @@
+/**
+ * SQE SERVICE INC. All right reserved.
+ */
+package com.sqe.gom.model;
+
+import java.io.Serializable;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+import javax.persistence.Transient;
+import org.apache.commons.lang.builder.EqualsBuilder;
+import org.apache.commons.lang.builder.HashCodeBuilder;
+import com.google.gson.annotations.Expose;
+import com.sqe.gom.constant.ApprovalStatus;
+import com.sqe.gom.constant.CensusType;
+import com.sqe.gom.constant.DocumentsType;
+import com.sqe.gom.constant.EmployeeCate;
+import com.sqe.gom.constant.GenderType;
+import com.sqe.gom.constant.MaritalStatus;
+
+/**
+ * @description User of entity.
+ * @author <a href="mailto:sqe_james@126.com">James</a>
+ * @date Jul 25, 2011 11:04:35 PM
+ * @version 3.0
+ */
+@Entity
+@Table(name="guser")
+public class GomUser implements Serializable {
+	private static final long serialVersionUID = -9137179245056475448L;
+	
+	@Expose
+	@Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Integer id;
+	
+	//basic information
+	@Expose
+	@Column(length=15,nullable=false,updatable=false)
+	private String jobNo;
+	
+	@Expose
+	@Column(length=15,nullable=false,unique=true)
+	private String ename;
+	
+	@Column(length=32,nullable=false)
+	private String pwd;
+	
+	@Expose
+	@Column(length=12,nullable=false)
+	private String cname;
+	
+	@Expose
+	@Column(length=17,nullable=false)
+	private String cell;
+	
+	@Expose
+	@Column(length=35)
+	private String email;
+	
+	@Expose
+	@Column(length=16)
+	private String emailPwd;
+	
+	// information detail
+	@Expose
+	@Enumerated(EnumType.ORDINAL)
+	@Column(updatable=false)
+	private GenderType gender;  //性别
+	
+	@Enumerated(EnumType.ORDINAL)
+	@Column(nullable=false)
+	private DocumentsType documents; //证件类型
+	
+	@Expose
+	@Column(length=18,nullable=false)
+	private String idcard; //身份证
+	
+	@Expose
+	@Column(length=36)
+	private String idScan; //身份证JPG扫描件存储名称 md5.jpg
+	
+	@Expose
+	@Column(length=36)
+	private String portrait; //头像
+	
+	@Expose
+	@Column(length=8)
+	private String nation; //民族
+	
+	@Expose
+	@Enumerated(EnumType.ORDINAL)
+	private CensusType censusType; //户籍类型  e.g. 农村/城镇
+	
+	@Expose
+	@Temporal(TemporalType.DATE)
+	private Date birthday; // e.g. 出生年月1987-08-23
+	
+	@Expose
+	@Column(length=20)
+	private String bank; //银行开户行名称
+	
+	@Expose
+	@Column(length=19)
+	private String accountNo; //银行账号
+	
+	@Expose
+	@Enumerated(EnumType.ORDINAL)
+	private MaritalStatus marriage; // 婚姻状况
+	
+	@Expose
+	@Column(length=3)
+	private String height; //身高
+	
+	@Expose
+	@Column(length=35)
+	private String privateMail; //私人信箱
+	
+	@Expose
+	@Column(length=16)
+	private String phone; //固话
+	
+	@Expose
+	@Column(length=5)
+	private String telExt; //分机号
+	
+	@Column(name="active")
+	private Boolean active;
+	
+	@Column(name="locked")
+	private Boolean lock;
+	
+	@Expose
+	private Boolean generic;	//菜单通用
+	
+	@Expose
+	@Enumerated(EnumType.ORDINAL)
+	private EmployeeCate type;
+	
+	@Expose
+	@Temporal(TemporalType.DATE)
+	@Column(updatable=false)
+	private Date entryDate;  //入职日期
+	
+	@Expose
+	@Temporal(TemporalType.DATE)
+	private Date fullDate; //转正日期
+	
+	@Temporal(TemporalType.DATE)
+	private Date exitDate;  //离职日期
+	
+	@Expose
+	@Transient
+	private String cdepartment;
+	@Expose
+	@Transient
+	private Integer dptId;
+	@Expose
+	@Transient
+	private String cposition;
+	@Expose
+	@Transient
+	private Integer pstId;
+	@Expose
+	@Transient
+	private Integer traceId;
+	@Expose
+	@Transient
+	private String nodeCode;
+	@Expose
+	@Transient
+	private Integer nodeOrder;
+	@Expose
+	@Transient
+	private String opinion;
+	@Expose
+	@Transient
+	private ApprovalStatus approval;
+	
+	@ManyToMany(cascade={CascadeType.ALL},targetEntity=GomGroup.class,fetch=FetchType.LAZY)
+	@JoinTable(name="userGroup",joinColumns=@JoinColumn(name="uid",referencedColumnName="id"),inverseJoinColumns=@JoinColumn(name="gid",referencedColumnName="id"))
+	private Set<GomGroup> groups = new HashSet<GomGroup>();;
+	
+	@OneToMany(cascade=CascadeType.ALL,mappedBy="user",fetch=FetchType.LAZY)
+	private Set<UserResp> responsibilities = new HashSet<UserResp>();
+	
+	@OneToMany(cascade=CascadeType.ALL,fetch=FetchType.LAZY, mappedBy ="user")
+	private Set<Address> address = new HashSet<Address>();
+	
+	@OneToMany(cascade=CascadeType.ALL,fetch=FetchType.LAZY, mappedBy ="user")
+	private Set<Leave> leaves = new HashSet<Leave>();
+	
+	@OneToMany(cascade=CascadeType.ALL,fetch=FetchType.LAZY, mappedBy ="user")
+	private Set<Education> education = new HashSet<Education>();
+	
+	@OneToMany(cascade=CascadeType.ALL,fetch=FetchType.LAZY, mappedBy ="user")
+	private Set<Departure> departure = new HashSet<Departure>();
+	
+	@ManyToMany(cascade={CascadeType.ALL},targetEntity=Ztree.class,fetch=FetchType.LAZY)
+	@JoinTable(name="userTree",joinColumns=@JoinColumn(name="uid",referencedColumnName="id"),inverseJoinColumns=@JoinColumn(name="zid",referencedColumnName="id"))
+	private Set<Ztree> trees = new HashSet<Ztree>();
+	
+	@OneToMany(cascade=CascadeType.ALL, fetch=FetchType.LAZY, mappedBy="user")
+	private Set<ReportConfig> reportConfigs = new HashSet<ReportConfig>();
+	
+	@OneToMany(cascade=CascadeType.ALL, fetch=FetchType.LAZY, mappedBy="user")
+	private Set<Summary> summarys = new HashSet<Summary>();
+	
+	@OneToMany(cascade=CascadeType.ALL, fetch=FetchType.LAZY, mappedBy="user")
+	private Set<Report> reports = new HashSet<Report>();
+	
+	@OneToMany(cascade=CascadeType.ALL,fetch=FetchType.LAZY, mappedBy ="user")
+	private Set<Lieu> lieu = new HashSet<Lieu>();
+	
+	@OneToOne(cascade=CascadeType.ALL, fetch=FetchType.LAZY, mappedBy="user")
+	private Signature signature;
+	
+	@OneToMany(cascade=CascadeType.ALL,fetch=FetchType.LAZY, mappedBy ="user")
+	private Set<Abnormal> abnormal = new HashSet<Abnormal>();
+	
+	public GomUser() {}
+	
+	public GomUser(Integer id) {
+		this.id = id;
+	}
+
+	//查询用户
+	public GomUser(Integer id, String jobNo, String ename, String cname,String cell, 
+			GenderType gender,String idcard, String idScan, String portrait, String nation,
+			CensusType censusType, Date birthday, String bank,String accountNo, 
+			String email, String emailPwd, String height, String privateMail, String phone, String telExt, 
+			MaritalStatus marriage, Boolean generic, Integer dptId, String cdepartment, Integer pstId, String cposition) {
+		this.id = id;
+		this.jobNo = jobNo;
+		this.ename = ename;
+		this.cname = cname;
+		this.cell = cell;
+		this.gender = gender;
+		this.idcard = idcard;
+		this.idScan = idScan;
+		this.portrait = portrait;
+		this.nation = nation;
+		this.censusType = censusType;
+		this.birthday = birthday;
+		this.bank = bank;
+		this.accountNo = accountNo;
+		this.email = email;
+		this.emailPwd = emailPwd;
+		this.height = height;
+		this.privateMail = privateMail;
+		this.marriage = marriage;
+		this.generic = generic;
+		this.phone = phone;
+		this.telExt = telExt;
+		this.dptId = dptId;
+		this.cdepartment = cdepartment;
+		this.pstId = pstId;
+		this.cposition = cposition;
+	}
+	
+	//入职用户到构造方法
+	public GomUser(Integer id, String jobNo, String ename, String cname,String cell, GenderType gender, MaritalStatus marriage,String idcard, String idScan, String portrait, String nation,CensusType censusType, Date birthday, String bank,String accountNo, Date entryDate, Date fullDate, Integer dptId, String dptCname,Integer pstId, String pstCname){
+		this.id = id;
+		this.jobNo = jobNo;
+		this.ename = ename;
+		this.cname = cname;
+		this.cell = cell;
+		this.gender = gender;
+		this.idcard = idcard;
+		this.idScan = idScan;
+		this.portrait = portrait;
+		this.nation = nation;
+		this.censusType = censusType;
+		this.birthday = birthday;
+		this.bank = bank;
+		this.accountNo = accountNo;
+		this.marriage = marriage;
+		this.entryDate = entryDate;
+		this.fullDate = fullDate;
+		this.dptId = dptId;
+		this.cdepartment = dptCname;
+		this.pstId = pstId;
+		this.cposition = pstCname;
+	}
+	
+	
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getJobNo() {
+		return jobNo;
+	}
+
+	public void setJobNo(String jobNo) {
+		this.jobNo = jobNo;
+	}
+
+	public String getEname() {
+		return ename;
+	}
+
+	public void setEname(String ename) {
+		this.ename = ename;
+	}
+
+	public String getPwd() {
+		return pwd;
+	}
+
+	public void setPwd(String pwd) {
+		this.pwd = pwd;
+	}
+
+	public String getCname() {
+		return cname;
+	}
+
+	public void setCname(String cname) {
+		this.cname = cname;
+	}
+
+	public String getCell() {
+		return cell;
+	}
+
+	public void setCell(String cell) {
+		this.cell = cell;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getEmailPwd() {
+		return emailPwd;
+	}
+
+	public void setEmailPwd(String emailPwd) {
+		this.emailPwd = emailPwd;
+	}
+
+	public GenderType getGender() {
+		return gender;
+	}
+
+	public void setGender(GenderType gender) {
+		this.gender = gender;
+	}
+
+	public DocumentsType getDocuments() {
+		return documents;
+	}
+
+	public void setDocuments(DocumentsType documents) {
+		this.documents = documents;
+	}
+
+	public String getIdcard() {
+		return idcard;
+	}
+
+	public void setIdcard(String idcard) {
+		this.idcard = idcard;
+	}
+
+	public String getIdScan() {
+		return idScan;
+	}
+
+	public void setIdScan(String idScan) {
+		this.idScan = idScan;
+	}
+
+	public String getPortrait() {
+		return portrait;
+	}
+
+	public void setPortrait(String portrait) {
+		this.portrait = portrait;
+	}
+
+	public String getNation() {
+		return nation;
+	}
+
+	public void setNation(String nation) {
+		this.nation = nation;
+	}
+
+	public CensusType getCensusType() {
+		return censusType;
+	}
+
+	public void setCensusType(CensusType censusType) {
+		this.censusType = censusType;
+	}
+
+	public Date getBirthday() {
+		return birthday;
+	}
+
+	public void setBirthday(Date birthday) {
+		this.birthday = birthday;
+	}
+
+	public String getBank() {
+		return bank;
+	}
+
+	public void setBank(String bank) {
+		this.bank = bank;
+	}
+
+	public String getAccountNo() {
+		return accountNo;
+	}
+
+	public void setAccountNo(String accountNo) {
+		this.accountNo = accountNo;
+	}
+
+	public MaritalStatus getMarriage() {
+		return marriage;
+	}
+
+	public void setMarriage(MaritalStatus marriage) {
+		this.marriage = marriage;
+	}
+
+	public String getHeight() {
+		return height;
+	}
+
+	public void setHeight(String height) {
+		this.height = height;
+	}
+
+	public String getPrivateMail() {
+		return privateMail;
+	}
+
+	public void setPrivateMail(String privateMail) {
+		this.privateMail = privateMail;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+	public String getTelExt() {
+		return telExt;
+	}
+
+	public void setTelExt(String telExt) {
+		this.telExt = telExt;
+	}
+
+	public Boolean isActive() {
+		return active;
+	}
+
+	public void setActive(Boolean active) {
+		this.active = active;
+	}
+
+	public Boolean isLock() {
+		return lock;
+	}
+
+	public void setLock(Boolean lock) {
+		this.lock = lock;
+	}
+
+	public Boolean isGeneric() {
+		return generic;
+	}
+
+	public void setGeneric(Boolean generic) {
+		this.generic = generic;
+	}
+
+	public EmployeeCate getType() {
+		return type;
+	}
+
+	public void setType(EmployeeCate type) {
+		this.type = type;
+	}
+
+	public Date getFullDate() {
+		return fullDate;
+	}
+
+	public void setFullDate(Date fullDate) {
+		this.fullDate = fullDate;
+	}
+
+	public Date getEntryDate() {
+		return entryDate;
+	}
+
+	public void setEntryDate(Date entryDate) {
+		this.entryDate = entryDate;
+	}
+
+	public Date getExitDate() {
+		return exitDate;
+	}
+
+	public void setExitDate(Date exitDate) {
+		this.exitDate = exitDate;
+	}
+
+	public String getCdepartment() {
+		return cdepartment;
+	}
+
+	public void setCdepartment(String cdepartment) {
+		this.cdepartment = cdepartment;
+	}
+	
+	public Integer getDptId() {
+		return dptId;
+	}
+
+	public void setDptId(Integer dptId) {
+		this.dptId = dptId;
+	}
+
+	public Integer getPstId() {
+		return pstId;
+	}
+
+	public void setPstId(Integer pstId) {
+		this.pstId = pstId;
+	}
+
+	public String getCposition() {
+		return cposition;
+	}
+
+	public void setCposition(String cposition) {
+		this.cposition = cposition;
+	}
+
+	public Integer getTraceId() {
+		return traceId;
+	}
+
+	public void setTraceId(Integer traceId) {
+		this.traceId = traceId;
+	}
+
+	public String getNodeCode() {
+		return nodeCode;
+	}
+
+	public void setNodeCode(String nodeCode) {
+		this.nodeCode = nodeCode;
+	}
+
+	public Integer getNodeOrder() {
+		return nodeOrder;
+	}
+
+	public void setNodeOrder(Integer nodeOrder) {
+		this.nodeOrder = nodeOrder;
+	}
+
+	public String getOpinion() {
+		return opinion;
+	}
+
+	public void setOpinion(String opinion) {
+		this.opinion = opinion;
+	}
+
+	public ApprovalStatus getApproval() {
+		return approval;
+	}
+
+	public void setApproval(ApprovalStatus approval) {
+		this.approval = approval;
+	}
+
+	public Set<GomGroup> getGroups() {
+		return groups;
+	}
+
+	public void setGroups(Set<GomGroup> groups) {
+		this.groups = groups;
+	}
+
+	public Set<UserResp> getResponsibilities() {
+		return responsibilities;
+	}
+
+	public void setResponsibilities(Set<UserResp> responsibilities) {
+		this.responsibilities = responsibilities;
+	}
+
+	public Set<Address> getAddress() {
+		return address;
+	}
+
+	public void setAddress(Set<Address> address) {
+		this.address = address;
+	}
+
+	public Set<Leave> getLeaves() {
+		return leaves;
+	}
+
+	public void setLeaves(Set<Leave> leaves) {
+		this.leaves = leaves;
+	}
+
+	public Set<Education> getEducation() {
+		return education;
+	}
+
+	public void setEducation(Set<Education> education) {
+		this.education = education;
+	}
+
+	public Set<Departure> getDeparture() {
+		return departure;
+	}
+
+	public void setDeparture(Set<Departure> departure) {
+		this.departure = departure;
+	}
+
+	public Set<Ztree> getTrees() {
+		return trees;
+	}
+
+	public void setTrees(Set<Ztree> trees) {
+		this.trees = trees;
+	}
+
+	public Set<ReportConfig> getReportConfigs() {
+		return reportConfigs;
+	}
+
+	public void setReportConfigs(Set<ReportConfig> reportConfigs) {
+		this.reportConfigs = reportConfigs;
+	}
+
+	public Set<Summary> getSummarys() {
+		return summarys;
+	}
+
+	public void setSummarys(Set<Summary> summarys) {
+		this.summarys = summarys;
+	}
+
+	public Set<Report> getReports() {
+		return reports;
+	}
+
+	public void setReports(Set<Report> reports) {
+		this.reports = reports;
+	}
+
+	public Set<Lieu> getLieu() {
+		return lieu;
+	}
+
+	public void setLieu(Set<Lieu> lieu) {
+		this.lieu = lieu;
+	}
+	
+	public Signature getSignature() {
+		return signature;
+	}
+
+	public void setSignature(Signature signature) {
+		this.signature = signature;
+	}
+
+	public Set<Abnormal> getAbnormal() {
+		return abnormal;
+	}
+
+	public void setAbnormal(Set<Abnormal> abnormal) {
+		this.abnormal = abnormal;
+	}
+
+	public void addEdu(Education e) {
+		e.setUser(this);
+		this.education.add(e);
+	}
+	
+	public void addAddr(Address a) {
+		a.setUser(this);
+		this.address.add(a);
+	}
+	
+	public void addDeparture(Departure dep) {
+		dep.setUser(this);
+		this.departure.add(dep);
+	}
+
+	@Override
+	public int hashCode() {
+		return new HashCodeBuilder().append(getEmail()).append(getJobNo()).toHashCode();
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj instanceof GomUser != true)
+			return false;
+		GomUser other = (GomUser) obj;
+		return new EqualsBuilder().append(getJobNo(), other.getJobNo()).append(getEmail(), other.getEmail()).isEquals();
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("{");
+		sb.append(this.id);
+		sb.append(",").append(this.jobNo);
+		sb.append(",").append(this.ename);
+		sb.append(",").append(this.cname);
+		sb.append(",").append(this.pwd);
+		sb.append(",").append(this.cell);
+		sb.append(",").append(this.email);
+		sb.append(",").append(this.emailPwd);
+		sb.append("}");
+		return sb.toString();
+	}
+}

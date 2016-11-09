@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/repos/!svn/ver/31/gom/src/main/resources
+END
+ehcache.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/!svn/ver/26/gom/src/main/resources/ehcache.xml
+END
+SIMYOU.TTF
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/!svn/ver/20/gom/src/main/resources/SIMYOU.TTF
+END
+messages_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/31/gom/src/main/resources/messages_zh_CN.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/!svn/ver/27/gom/src/main/resources/log4j.properties
+END
+messages_en_US.properties
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/2/gom/src/main/resources/messages_en_US.properties
+END
+gom.properties
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/!svn/ver/19/gom/src/main/resources/gom.properties
+END
+messages_zh_TW.properties
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/31/gom/src/main/resources/messages_zh_TW.properties
+END
+copy_message
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/!svn/ver/31/gom/src/main/resources/copy_message
+END

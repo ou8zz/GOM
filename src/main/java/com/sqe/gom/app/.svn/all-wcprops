@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/!svn/ver/32/gom/src/main/java/com/sqe/gom/app
+END
+ProcessService.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/37/gom/src/main/java/com/sqe/gom/app/ProcessService.java
+END
+BpmService.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/app/BpmService.java
+END
+UserService.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/37/gom/src/main/java/com/sqe/gom/app/UserService.java
+END
+AssetService.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/37/gom/src/main/java/com/sqe/gom/app/AssetService.java
+END
+ResponsibilityService.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/37/gom/src/main/java/com/sqe/gom/app/ResponsibilityService.java
+END
+LogService.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/36/gom/src/main/java/com/sqe/gom/app/LogService.java
+END
+MailService.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/app/MailService.java
+END
+GomService.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/37/gom/src/main/java/com/sqe/gom/app/GomService.java
+END
+FixedTaskService.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/36/gom/src/main/java/com/sqe/gom/app/FixedTaskService.java
+END
+ResourceService.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/37/gom/src/main/java/com/sqe/gom/app/ResourceService.java
+END
+MeetingService.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/37/gom/src/main/java/com/sqe/gom/app/MeetingService.java
+END
+CommonService.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/37/gom/src/main/java/com/sqe/gom/app/CommonService.java
+END
+FileManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/app/FileManager.java
+END
+ZtreeService.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/36/gom/src/main/java/com/sqe/gom/app/ZtreeService.java
+END
+SwotService.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/37/gom/src/main/java/com/sqe/gom/app/SwotService.java
+END
+SummaryService.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/37/gom/src/main/java/com/sqe/gom/app/SummaryService.java
+END
+ReportConfigService.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/37/gom/src/main/java/com/sqe/gom/app/ReportConfigService.java
+END
+MottoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/37/gom/src/main/java/com/sqe/gom/app/MottoService.java
+END
+ProjectService.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/37/gom/src/main/java/com/sqe/gom/app/ProjectService.java
+END
+GomQueryService.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/app/GomQueryService.java
+END
+TrainingService.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/37/gom/src/main/java/com/sqe/gom/app/TrainingService.java
+END
+HolidaysService.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/37/gom/src/main/java/com/sqe/gom/app/HolidaysService.java
+END

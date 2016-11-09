@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<style type="text/css">
+body{font:0.8em/150% Arial,sans-serif,simsung,Verdana,Tahoma,Helvetica;}
+.signiture h3,.signiture p{padding:0;margin:0;}
+.signiture table b{color:#03F}
+.signiture table{border-bottom:1px solid #000;}
+</style>
+</head>
+<body>
+<div class="signiture">
+<h3>Best Regards</h3>
+<h3>${user.ename}(${user.cname})</h3>
+<table width="519" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="119" rowspan="2"><img src="images/sqe_logo.jpg" width="119" height="45" alt="LOGO" /></td>
+    <td width="240"><b>TEL:</b> ${config.tel} ext. ${user.telExt}</td>
+    <td width="160"><b>FAX:</b> ${config.fax}</td>
+  </tr>
+  <tr>
+    <td><b>EMAIL:</b> ${user.email}</td>
+    <td><b>WEB:</b> <a href="http://${config.web}">${config.web}</a></td>
+  </tr>
+</table>
+<p>GOM_v${config.version} Copyright&copy;2005-2013 ${config.company_cn} ${config.company_en} 版权所有</p>
+</div>
+</body>
+</html>

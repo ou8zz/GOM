@@ -1,0 +1,227 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/!svn/ver/31/gom/src/main/java/com/sqe/gom/constant
+END
+LeaveNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/LeaveNode.java
+END
+CensusType.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/CensusType.java
+END
+DocumentsType.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/DocumentsType.java
+END
+TaskType.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/TaskType.java
+END
+LogsType.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/LogsType.java
+END
+Attendance.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/Attendance.java
+END
+MenuType.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/35/gom/src/main/java/com/sqe/gom/constant/MenuType.java
+END
+ProjectType.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/ProjectType.java
+END
+NeedState.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/NeedState.java
+END
+SwotModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/SwotModel.java
+END
+TrainingType.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/TrainingType.java
+END
+ProductType.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/ProductType.java
+END
+AssignType.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/AssignType.java
+END
+ResourceType.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/14/gom/src/main/java/com/sqe/gom/constant/ResourceType.java
+END
+DateRange.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/31/gom/src/main/java/com/sqe/gom/constant/DateRange.java
+END
+OverTimeType.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/OverTimeType.java
+END
+AbnormalType.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/AbnormalType.java
+END
+MaritalStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/MaritalStatus.java
+END
+LeaveType.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/LeaveType.java
+END
+ItemType.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/ItemType.java
+END
+WorkingHoursType.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/WorkingHoursType.java
+END
+GenderType.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/GenderType.java
+END
+StatisticalMethods.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/StatisticalMethods.java
+END
+EmployeeCate.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/EmployeeCate.java
+END
+AddrType.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/AddrType.java
+END
+HandlerState.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/HandlerState.java
+END
+SessionAttr.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/SessionAttr.java
+END
+AssetState.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/AssetState.java
+END
+ProcessType.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/ProcessType.java
+END
+AssetType.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/AssetType.java
+END
+ProcessStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/ProcessStatus.java
+END
+SwotLevel.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/SwotLevel.java
+END
+ApplyState.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/ApplyState.java
+END
+ApprovalStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/ApprovalStatus.java
+END
+DateMarkType.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/DateMarkType.java
+END
+GroupType.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/GroupType.java
+END
+UnfinishedType.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/constant/UnfinishedType.java
+END

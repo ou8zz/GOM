@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/!svn/ver/30/gom/src/main/java/com/sqe/gom/web/filter
+END
+AuthenticationFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/36/gom/src/main/java/com/sqe/gom/web/filter/AuthenticationFilter.java
+END
+EncodingFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/web/filter/EncodingFilter.java
+END

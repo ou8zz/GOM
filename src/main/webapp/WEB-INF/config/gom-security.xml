@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+           http://www.springframework.org/schema/security
+           http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+
+	<http use-expressions="true">
+	    <!-- 登录表单设置 -->
+    	<form-login login-page='/index.html' default-target-url='/app/index.htm' always-use-default-target='true' />
+
+        <!-- 登出操作后跳转到该页面 -->
+   		<logout logout-success-url="/gom_logout.htm" delete-cookies="JSESSIONID" />  
+   		<remember-me key="springRocks" services-ref="rememberMeServices" />
+        <logout logout-url="/gom_logout.htm" logout-success-url="/index.html" invalidate-session="true"/>
+        
+        <!-- 设置并发过滤器 -->
+        <custom-filter position="CONCURRENT_SESSION_FILTER" ref="concurrencyFilter" />
+        
+		<!-- 设置登录过滤器 -->
+  		<custom-filter before="FORM_LOGIN_FILTER" ref="loginPoint" />
+  		<custom-filter before="LOGOUT_FILTER" ref="logoutPoint" />
+  		<session-management session-authentication-strategy-ref="sas" />
+        
+		<!-- 自定义权限控制filter-->  
+        <custom-filter before="FILTER_SECURITY_INTERCEPTOR" ref="gomSecurityFilter" />  
+        
+        <access-denied-handler ref="accessDeniedHandler"/>
+        
+		<!-- 前台Admin权限访问的URL -->
+        <intercept-url pattern="/app/*" access="hasRole('User')"/>
+        <!-- 后台Admin权限访问的URL -->
+        <intercept-url pattern="/admin/*" access="hasRole('Admin')"/>
+	</http>
+
+	<!-- 方法注解开启 -->
+	<global-method-security pre-post-annotations="enabled" />
+	
+	<authentication-manager alias="authenticationManager">
+		<authentication-provider user-service-ref="userDetailService">
+				<!-- 如果用户的密码采用加密的话
+                <password-encoder hash="md5" />  --> 
+		</authentication-provider>
+	</authentication-manager>
+	
+	<!-- 登录过滤器 -->
+    <beans:bean id="loginPoint" class="com.sqe.gom.security.LoginPoint" >
+    	<beans:property name="authenticationManager" ref="authenticationManager" />
+    	<beans:property name="sessionAuthenticationStrategy" ref="sas" />
+        <beans:property name="authenticationSuccessHandler" ref="loginSuccessHandler"  />
+        <beans:property name="authenticationFailureHandler" ref="loginFailureHandler" />
+        <beans:property name="rememberMeServices" ref="rememberMeServices"/>
+        <beans:property name="filterProcessesUrl" value="/gom_login.htm"/>
+    </beans:bean>
+	
+ 	<beans:bean id="sas" class="org.springframework.security.web.authentication.session.ConcurrentSessionControlStrategy">
+	  <beans:constructor-arg name="sessionRegistry" ref="sessionRegistry" />
+	  <beans:property name="maximumSessions" value="1" />
+	  <beans:property name="exceptionIfMaximumExceeded" value="false"/>
+	</beans:bean>
+
+	<!-- 登录成功处理-->
+	<beans:bean id="loginSuccessHandler" class="com.sqe.gom.security.LoginSuccessHandle" />
+	<!-- 登录失败处理-->
+	<beans:bean id="loginFailureHandler" class="com.sqe.gom.security.LoginFailureHandler" />
+	
+	<!-- 并发过滤器 -->
+	<beans:bean id="concurrencyFilter" class="org.springframework.security.web.session.ConcurrentSessionFilter">
+		<beans:property name="sessionRegistry" ref="sessionRegistry" />
+		<!-- <beans:property name="expiredUrl" value="/session-expired.htm" /> -->
+	</beans:bean>
+
+	<beans:bean id="rememberMeServices" class="com.sqe.gom.security.GomTokenBasedRememberMeServices">
+		<beans:constructor-arg name="key" value="springRocks" />
+		<beans:constructor-arg name="userDetailsService" ref="userDetailService"/>
+<!-- 		<beans:property name="userDetailsService" ref="userDetailService" /> -->
+<!-- 		<beans:property name="key" value="springRocks" /> -->
+		<beans:property name="tokenValiditySeconds" value="54000" /> <!-- remember me 15 hour -->
+<!-- 		<beans:property name="useSecureCookie" value="true"/> -->
+<!-- 		<beans:property name="alwaysRemember" value="true" /> -->
+	</beans:bean>
+	
+	<!-- 自定义权限控制filter，必须包含authenticationManager,accessDecisionManager,securityMetadataSource三个属性。 -->
+    <beans:bean id="gomSecurityFilter" class="com.sqe.gom.security.GomFilterSecurityInterceptor">
+        <beans:property name="authenticationManager" ref="authenticationManager" />			<!-- 登陆的认证 -->
+        <beans:property name="accessDecisionManager" ref="gomAccessDecisionManager" />		<!-- 资源访问决策 -->
+        <beans:property name="securityMetadataSource" ref="customSecurityMetadataSource" />	<!-- 资源和权限列表 -->
+    </beans:bean>
+    
+    <beans:bean id="treeDao" class="com.sqe.gom.dao.impl.ZtreeDAOImpl" />
+    <beans:bean id="sessionRegistry" class="org.springframework.security.core.session.SessionRegistryImpl" />
+	<beans:bean id="userDetailService" class="com.sqe.gom.security.UserDetailService" />
+	<beans:bean id="customSecurityMetadataSource" class="com.sqe.gom.security.CustomInvocationSecurityMetadataSourceService">
+		<beans:constructor-arg ref="treeDao"></beans:constructor-arg>
+	</beans:bean>
+	<beans:bean id="gomAccessDecisionManager" class="com.sqe.gom.security.GomAccessDecisionManager" />
+	
+	<beans:bean id="accessDeniedHandler" class="com.sqe.gom.security.AjaxAccessDeniedHandlerImpl">
+		<beans:property name="errorPage" value="/denyAccess.html" />
+	</beans:bean>
+  
+	<!-- 注销过滤器，完成用户注销时的定向功能 -->
+    <beans:bean id="logoutPoint" class="org.springframework.security.web.authentication.logout.LogoutFilter">
+        <beans:constructor-arg value="/index.html" />
+        <beans:constructor-arg>
+            <beans:list>
+                <beans:bean class="com.sqe.gom.security.LogoutHandle" />
+            </beans:list>
+        </beans:constructor-arg>
+        <beans:property name="filterProcessesUrl" value="/gom_logout.htm" />
+    </beans:bean>
+    
+</beans:beans>

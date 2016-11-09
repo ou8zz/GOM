@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/2000/REC-xhtml1-200000126/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>入职报道 --SQE SERVICE GOM</title>
+<link href="styles/reg.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="styles/jquery-ui-1.8.4.custom.css" media="screen" rel="stylesheet" type="text/css"/>
+<script src="scripts/common/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="scripts/common/jquery-ui-1.8.4.custom.js" type="text/javascript"></script>
+<script src="scripts/swfobject.js" type="text/javascript"></script>
+<script src="scripts/common/uploadify-2.1.4.js" type="text/javascript"></script>
+<script src="scripts/common/validate.js" type="text/javascript"></script>
+<script type="text/javascript" src="scripts/maskedinput.js"></script>
+<script src="scripts/reg_edu.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="container">
+<div id="header"></div>
+<div id="content">
+<div id="left_side">
+<h1>入职</h1>
+<div id="proceede">
+<h2>报道程序</h2>
+<a class="step step1">填写个人信息及上传证件扫描档</a>
+<a class="step step2">人事部审核报道人资料</a>
+<a class="step step3">IT部开放账号，系统自动邮件通知入职所在部门的所有成员</a>
+</div>
+</div>
+<div id="right_side">
+<h1>Step 2 of 3 </h1>
+<form:form id="eduForm" method="post" modelAttribute="edu" action="save_edu.htm">
+<form:hidden path="id" />
+<form:hidden path="idScan" />
+<fieldset class="fs_title">
+  <legend class="leg_title">教育/培训经历</legend>
+    <dl>
+    <div class="error" style="display:none;">
+      <img src="images/warning.gif" alt="Warning!" width="24" height="24" style="float:left;margin:-5px 10px 0px 0px; "/>
+      <span></span>.<br clear="all"/>
+    </div>
+      <dd>
+        <label class="lab">开始日期 :</label> <form:input path="startDate" id="startDate" cssClass="inp required" tabindex="1" maxlength="10"/>
+      </dd>
+      <dd>
+        <label class="lab">结束日期 :</label> <form:input path="endDate" id="endDate" cssClass="inp required" tabindex="2" maxlength="10"/>
+      </dd>
+      <dd>
+        <label class="lab">毕业学校/培训机构:</label> 
+        <form:input id="school" path="school" cssClass="inp required" tabindex="3" maxlength="30"/>
+      </dd>
+      <dd>
+        <label class="lab">学历/职称:</label> 
+        <form:input id="ed" path="ed" cssClass="inp required" tabindex="4" maxlength="16"/>
+      </dd>
+      <dd>
+        <label class="lab">学习/培训专业 :</label>
+        <form:input id="major" path="major" cssClass="inp required" tabindex="5" maxlength="20"/>
+      </dd>
+      <dd>
+        <label class="lab">证书编号 :</label>
+        <form:input id="idno" path="idno" cssClass="inp required" tabindex="6" maxlength="30"/>
+      </dd>
+      <dd>
+        <label class="lab">证书扫描件:</label>
+        <input type="file" name="idScanImg" id="idScanImg" tabindex="7"/>
+      </dd>
+      <div id="addRow"><input type="submit" value="再添加一项"></div>
+  </dl>
+</fieldset>
+<div class="buttonSubmit" id="butSubmit">
+  <span></span>
+  <input type="button" name="userSubmit" value="提交" id="userSubmit" tabindex="20"/>
+</div>
+</form:form>
+</div>
+</div>
+<div id="footer">
+  <div id="site_nav">
+      <ul>
+	    <li><a href="#">广告服务</a></li>
+	    <li><a href="#">GOM黑板报</a></li>
+	    <li><a href="#">关于我们</a></li>
+	    <li><a href="#">联系我们</a></li>
+	    <li class="last"><a href="#">友情链接</a></li>
+      </ul>
+   </div>
+   <div id="copyright">Copyright&copy;2011 sqeservice.com. All rights reserved. [ <a href="http://www.miibeian.gov.cn">沪ICP备07012608号-1</a> ]</div>
+</div>
+</div>
+</body>
+</html>

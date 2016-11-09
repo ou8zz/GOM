@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/!svn/ver/22/gom/src/main/java/com/sqe/gom/web/validation
+END
+DepartureValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/web/validation/DepartureValidator.java
+END
+GroupValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/web/validation/GroupValidator.java
+END
+LeaveValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/web/validation/LeaveValidator.java
+END
+LieuValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/web/validation/LieuValidator.java
+END
+TaskValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/web/validation/TaskValidator.java
+END
+ProjectValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/web/validation/ProjectValidator.java
+END
+EducationValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/web/validation/EducationValidator.java
+END
+TrainingValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/web/validation/TrainingValidator.java
+END
+HolidaysValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/web/validation/HolidaysValidator.java
+END
+UserValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/!svn/ver/22/gom/src/main/java/com/sqe/gom/web/validation/UserValidator.java
+END
+AssetValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/web/validation/AssetValidator.java
+END
+ProductValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/web/validation/ProductValidator.java
+END
+FixedTaskValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/web/validation/FixedTaskValidator.java
+END
+AddressValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/web/validation/AddressValidator.java
+END
+MeetingValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/web/validation/MeetingValidator.java
+END

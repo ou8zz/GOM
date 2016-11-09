@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/repos/!svn/ver/2/gom/src/main/resources/META-INF
+END
+bpm-persistence.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/2/gom/src/main/resources/META-INF/bpm-persistence.xml
+END
+drools.email.conf
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/2/gom/src/main/resources/META-INF/drools.email.conf
+END
+orm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/!svn/ver/2/gom/src/main/resources/META-INF/orm.xml
+END

@@ -1,0 +1,227 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/!svn/ver/32/gom/src/main/java/com/sqe/gom/model
+END
+UserResp.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/model/UserResp.java
+END
+Borrow.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/32/gom/src/main/java/com/sqe/gom/model/Borrow.java
+END
+Report.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/20/gom/src/main/java/com/sqe/gom/model/Report.java
+END
+Holidays.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/21/gom/src/main/java/com/sqe/gom/model/Holidays.java
+END
+Category.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/26/gom/src/main/java/com/sqe/gom/model/Category.java
+END
+Responsibility.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/21/gom/src/main/java/com/sqe/gom/model/Responsibility.java
+END
+Asset.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/model/Asset.java
+END
+FixedTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/model/FixedTask.java
+END
+Meeting.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/model/Meeting.java
+END
+Statistics.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/20/gom/src/main/java/com/sqe/gom/model/Statistics.java
+END
+SwotResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/20/gom/src/main/java/com/sqe/gom/model/SwotResult.java
+END
+MailHeader.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/model/MailHeader.java
+END
+Lieu.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/model/Lieu.java
+END
+GomGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/21/gom/src/main/java/com/sqe/gom/model/GomGroup.java
+END
+Signature.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/21/gom/src/main/java/com/sqe/gom/model/Signature.java
+END
+ReportConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/31/gom/src/main/java/com/sqe/gom/model/ReportConfig.java
+END
+Motto.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/model/Motto.java
+END
+Task.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/model/Task.java
+END
+Logs.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/21/gom/src/main/java/com/sqe/gom/model/Logs.java
+END
+Config.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/21/gom/src/main/java/com/sqe/gom/model/Config.java
+END
+Project.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/model/Project.java
+END
+Login.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/model/Login.java
+END
+Training.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/model/Training.java
+END
+Education.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/model/Education.java
+END
+Product.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/model/Product.java
+END
+GomUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/24/gom/src/main/java/com/sqe/gom/model/GomUser.java
+END
+SwotConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/model/SwotConfig.java
+END
+Address.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/9/gom/src/main/java/com/sqe/gom/model/Address.java
+END
+Experience.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/model/Experience.java
+END
+Resource.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/31/gom/src/main/java/com/sqe/gom/model/Resource.java
+END
+Ztree.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/!svn/ver/35/gom/src/main/java/com/sqe/gom/model/Ztree.java
+END
+ProcessInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/21/gom/src/main/java/com/sqe/gom/model/ProcessInfo.java
+END
+Abnormal.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/28/gom/src/main/java/com/sqe/gom/model/Abnormal.java
+END
+Departure.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/37/gom/src/main/java/com/sqe/gom/model/Departure.java
+END
+Leave.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/model/Leave.java
+END
+Summary.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/model/Summary.java
+END
+Trace.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/model/Trace.java
+END

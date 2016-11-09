@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/!svn/ver/32/gom/src/main/webapp/scripts/admin
+END
+logs.js
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/admin/logs.js
+END
+tree_config.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/35/gom/src/main/webapp/scripts/admin/tree_config.js
+END
+config.js
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/!svn/ver/35/gom/src/main/webapp/scripts/admin/config.js
+END
+ztree.js
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/!svn/ver/35/gom/src/main/webapp/scripts/admin/ztree.js
+END
+resources.js
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/!svn/ver/35/gom/src/main/webapp/scripts/admin/resources.js
+END
+group.js
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/admin/group.js
+END
+category.js
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/admin/category.js
+END
+process.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/!svn/ver/37/gom/src/main/webapp/scripts/admin/process.js
+END
+asset.js
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/!svn/ver/35/gom/src/main/webapp/scripts/admin/asset.js
+END
+basic_tree.js
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/35/gom/src/main/webapp/scripts/admin/basic_tree.js
+END
+users.js
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/admin/users.js
+END
+user_config.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/admin/user_config.js
+END

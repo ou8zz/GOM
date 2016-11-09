@@ -1,0 +1,32 @@
+.first_ul {list-style:none;}
+.first_li {border:1px #333 solid; margin:5px 0;padding:5px 0;}
+.first_li span{margin:0 10px; border-bottom:none; border-top:none; padding:0 15px;}
+
+.tr_con:hover{border:1px solid #a6c9e2;background-color:#d0e5f5;text-decoration:none;}
+.tr_type{background-image:url(../scripts/common/images/file_t.jpg);backgroud-repeat:repeat-x;}
+.tr_type th{ border:1px solid #a6c9e2;}
+.tr_con td{border:1px solid #a6c9e2;}
+
+.tree_but{width:16px; height:16px; padding:0; margin:2px 0 0 1px; border:0 none; background-color:transparent;  background-repeat:no-repeat; background-attachment: scroll; background-image:url("../images/ztree/zTreeStandard.png"); background-position:-44px -36px;}
+#ctree ul li:hover{border:1px solid #a6c9e2;background-color:#d0e5f5;text-decoration:none;}
+
+.tr_span{width:100px; display:-moz-inline-box; display:inline-block; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow: hidden;}
+span.tot {border:0px #333 solid; text-align:center;float:right; color:#666666; }
+span.tots {border:0px #333 solid; text-align:center;float:right; color:#003333}
+#lf dd input.exinp{border:1px solid #628EB1;height:22px;line-height:22px;margin-left:5px;width:50px;font-size:1em;}
+#sc_main #lf dd{width:220px;height:58px;float:left;font-size:1.1em;color:#0E5080;float:right;text-align:right; margin-right: 50px;}
+
+#edit_main fieldset{padding:10px;margin-top:5px;border:1px solid #A2A09A;}
+#edit_main fieldset legend{text-align:center;font-size:1em;font-weight:bold;padding:3px 20px;border:1px solid #666;background:#fff;}
+#edit_main table th,#edit_main table td{color:#333;border-collapse:collapse;border:1px solid #aabcfe; padding:3px;}
+#edit_main table th{background-color:#b9c9fe;text-align:center;vertical-align:middle;font-weight:bold;}
+#edit_main table td.bg{background-color:#e8edff;text-align:center;}
+#edit_main table td.trg{text-align:right;vertical-align:middle;background-color:#e8edff;}
+#edit_main table td.nob_t_b{border-top:none;border-bottom:none;text-align:center;}
+#edit_main table td.nob_l_r{border-left:none;border-right:none;text-align:center;}
+#edit_main table td.nobo,#edit_main table td.all{text-align:center;}
+#edit_main table td.primary{text-align:left;position:relative;background-color:#9cf}
+#edit_main table td.primary i{float:left;margin:0;padding:0;}
+#edit_main table td.secondary i,#edit_main table td.secondary span{float:right;margin:0;padding:0;}
+#edit_main table td.secondary{text-align:right;position:relative;}
+#edit_main dd{line-height:30px;height:30px;position:relative;clear:both;}

@@ -1,0 +1,287 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/!svn/ver/32/gom/src/main/webapp/WEB-INF/jsp/app
+END
+mgr_responsibility.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/jsp/app/mgr_responsibility.jsp
+END
+projects.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/jsp/app/projects.jsp
+END
+leave.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/30/gom/src/main/webapp/WEB-INF/jsp/app/leave.jsp
+END
+order_task.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/22/gom/src/main/webapp/WEB-INF/jsp/app/order_task.jsp
+END
+entrants.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/20/gom/src/main/webapp/WEB-INF/jsp/app/entrants.jsp
+END
+report_config.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/31/gom/src/main/webapp/WEB-INF/jsp/app/report_config.jsp
+END
+my_abnormal.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/28/gom/src/main/webapp/WEB-INF/jsp/app/my_abnormal.jsp
+END
+products.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/jsp/app/products.jsp
+END
+receipt_departure.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/30/gom/src/main/webapp/WEB-INF/jsp/app/receipt_departure.jsp
+END
+my_task.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/jsp/app/my_task.jsp
+END
+index.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/36/gom/src/main/webapp/WEB-INF/jsp/app/index.jsp
+END
+list_departures.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/jsp/app/list_departures.jsp
+END
+education.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/7/gom/src/main/webapp/WEB-INF/jsp/app/education.jsp
+END
+training.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/7/gom/src/main/webapp/WEB-INF/jsp/app/training.jsp
+END
+holidays.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/jsp/app/holidays.jsp
+END
+entrant_mail.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/jsp/app/entrant_mail.jsp
+END
+abnormals.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/jsp/app/abnormals.jsp
+END
+departures.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/37/gom/src/main/webapp/WEB-INF/jsp/app/departures.jsp
+END
+leaves.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/jsp/app/leaves.jsp
+END
+leaveForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/25/gom/src/main/webapp/WEB-INF/jsp/app/leaveForm.jsp
+END
+get_leaves_Don't enable.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/jsp/app/get_leaves_Don't%20enable.jsp
+END
+fixed_task.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/jsp/app/fixed_task.jsp
+END
+list_experience.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/jsp/app/list_experience.jsp
+END
+swotconfig.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/jsp/app/swotconfig.jsp
+END
+edit_user.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/9/gom/src/main/webapp/WEB-INF/jsp/app/edit_user.jsp
+END
+need_help.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/jsp/app/need_help.jsp
+END
+my_responsibility.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/35/gom/src/main/webapp/WEB-INF/jsp/app/my_responsibility.jsp
+END
+address.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/!svn/ver/9/gom/src/main/webapp/WEB-INF/jsp/app/address.jsp
+END
+resource.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/31/gom/src/main/webapp/WEB-INF/jsp/app/resource.jsp
+END
+responsibilities.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/20/gom/src/main/webapp/WEB-INF/jsp/app/responsibilities.jsp
+END
+meeting.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/jsp/app/meeting.jsp
+END
+handle_asset.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/jsp/app/handle_asset.jsp
+END
+get_receipt.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/jsp/app/get_receipt.jsp
+END
+receipt_asset.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/32/gom/src/main/webapp/WEB-INF/jsp/app/receipt_asset.jsp
+END
+leave_record.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/30/gom/src/main/webapp/WEB-INF/jsp/app/leave_record.jsp
+END
+departure.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/25/gom/src/main/webapp/WEB-INF/jsp/app/departure.jsp
+END
+respon_config.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/jsp/app/respon_config.jsp
+END
+update_pwd.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/jsp/app/update_pwd.jsp
+END
+borrows.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/32/gom/src/main/webapp/WEB-INF/jsp/app/borrows.jsp
+END
+summary.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/28/gom/src/main/webapp/WEB-INF/jsp/app/summary.jsp
+END
+lieu.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/jsp/app/lieu.jsp
+END
+motto.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/jsp/app/motto.jsp
+END
+task.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/jsp/app/task.jsp
+END
+assets.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/!svn/ver/35/gom/src/main/webapp/WEB-INF/jsp/app/assets.jsp
+END
+approval_task.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/jsp/app/approval_task.jsp
+END
+apply_assets.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/35/gom/src/main/webapp/WEB-INF/jsp/app/apply_assets.jsp
+END
+howtodo.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/32/gom/src/main/webapp/WEB-INF/jsp/app/howtodo.jsp
+END

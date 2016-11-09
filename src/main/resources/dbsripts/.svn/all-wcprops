@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/repos/!svn/ver/30/gom/src/main/resources/dbsripts
+END
+gom_init_linux.sql
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/29/gom/src/main/resources/dbsripts/gom_init_linux.sql
+END
+mysql.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/!svn/ver/2/gom/src/main/resources/dbsripts/mysql.sql
+END
+testdb.sql
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/!svn/ver/36/gom/src/main/resources/dbsripts/testdb.sql
+END
+mysql_init_win.sql
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/!svn/ver/29/gom/src/main/resources/dbsripts/mysql_init_win.sql
+END

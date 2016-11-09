@@ -1,0 +1,49 @@
+@charset "utf-8";
+@import url("960_24_col.css");
+@import url("zTree.css");
+#header{height:100px;background-color:#8F9E28}
+#footer{text-align:center;margin:20px 0;}
+#footer li{display:inline;}
+#content{width:650px;position:relative;}
+#lf dd,#lf dd label.lab_button{width:320px;height:58px;float:left;}
+#lf dd label.label{font-size:1em;line-height:26px;height:26px;width:320px;float:right;text-align:right;color:#0E5080;margin-bottom:5px;}
+#lf dd label.area_label{font-size:1em;width:320px;float:right;text-align:right;color:#0E5080;margin-bottom:5px;}
+#lf dd textarea.area{float:right;border:1px solid #628EB1;;margin-left:5px;width:200px;font-size:1em;}
+#lf dd input.inp,#lf dd select.inp{float:right;border:1px solid #628EB1;height:22px;line-height:22px;margin-left:5px;width:200px;font-size:1em;}
+#content fieldset{padding:10px;margin-top:5px;border:1px solid #A2A09A;width:650px;}
+#content fieldset legend{text-align:center;font-size:1.2em;color:#000;font-weight:bold;padding:3px 20px;border:1px solid #666;background:#fff;}
+#lf dd input.error{border:1px solid red;}
+#lf dd label.error{color:red;display:none;}
+#lf dd label.error{background-image:url(../images/tip.gif);background-repeat:no-repeat;}
+#lf dd label.error{background-position:0 -16px;margin-left:85px;padding-left:18px;padding-top:1px;color:#EA5200;}
+#lf dd label.checked{background-position:0 1px;float:right; margin-top:-27px; margin-right:-25px;}
+#lfsub{clear:both;padding-top:45px;text-align:center; margin:10px auto;}
+#lfsub input.button{background-image:url(../images/aqua_but.png);background-repeat:no-repeat;background-color:transparent;width:120px;height:36px;background-position:0 0;border-width:0;}
+#lfsub input.button:hover{background-position:0 -36px;color:#BC2A4D;}
+#leavesubmit{font-size:1em;font-weight:bold;color:#069;cursor:pointer;}
+#ldlg p{padding:0;margin:0;}
+#ldlg th, #ldlg td{color:#333;border-collapse:collapse;border:1px solid #aabcfe; padding:3px;}
+#ldlg th{background-color:#b9c9fe;text-align:center;vertical-align:middle;font-weight:bold;}
+#ldlg td.bg{background-color:#e8edff;text-align:center;}
+#ldlg td.trg{text-align:right;vertical-align:middle;background-color:#e8edff;}
+#ldlg td.nob_t_b{border-top:none;border-bottom:none;}
+#ldlg td.nob_l_r{border-left:none;border-right:none;}
+#ldlg td.nobo{border:none;}
+#ldlg select.inp,#ldlg input.inp{height:22px;line-height:22px;font-size:1em;width:120px;}
+
+/** get_receipt */
+.receipt{margin:8px;}
+.receipt img.arrow{margin:5px 12px;}
+.opinion{position:relative;}
+.opinion div{float:left;margin-right:10px;}
+.opinion div span{display:block;}
+.opinion table{float:left;width:690px;border-collapse:collapse;}
+.opinion table th{font-size:1em;font-weight:normal;padding:8px;background:#b9c9fe url('../images/gradhead.png') repeat-x;border-top:2px solid #d3ddff;border-bottom:1px solid #fff;color:#039;}
+.opinion table td{font-size:0.9em;padding:4px;border-bottom:1px solid #fff;color:#669;border-top:1px solid #fff;background:#e8edff url('../images/gradback.png') repeat-x;}
+.opinion table tbody tr:hover td{background:#d0dafd url('../images/gradhover.png') repeat-x;color:#339;}
+
+/** get_leave_record */
+#v_opinion ul,#v_opinion ul li,#v_opinion ul ul, #v_opinion ul ul li,#comment ul, #comment ul li,tbody ul,tbody ul li{list-style:none;margin:0;padding:0}
+#crop_idScan,#crop_portrait{font-size:1em;font-weight:bold;color:#fff;cursor:pointer;}
+input.aqua_but{background-image:url(../images/aqua_but.png);background-repeat:no-repeat;background-color:transparent;width:120px;height:36px;background-position:0 0;border-width:0;}
+input.aqua_but:hover{background-position:0 -36px;color:#5890D1;}

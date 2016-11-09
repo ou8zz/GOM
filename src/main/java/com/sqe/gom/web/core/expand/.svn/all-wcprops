@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/web/core/expand
+END
+JGridHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/web/core/expand/JGridHelper.java
+END
+AjaxResolver.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/web/core/expand/AjaxResolver.java
+END
+SQLDateSerializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/web/core/expand/SQLDateSerializer.java
+END
+DataInitializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/web/core/expand/DataInitializer.java
+END
+AjaxView.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/web/core/expand/AjaxView.java
+END

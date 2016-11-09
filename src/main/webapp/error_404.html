@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>找不到您需要的页面..现在为您返回主页..</title>
+<style type="text/css">
+
+body {font-size: 13px;filter: progid:dximagetransform.microsoft.gradient(gradienttype=0,startcolorstr=#dbebfa,endcolorstr=#f9fcfd);margin: 0px;}
+h2{padding-right: 0px; padding-left: 0px; font-size: 16px; float: left; padding-bottom: 25px; margin: 0px; width: 100%; line-height: 0; padding-top: 25px; border-bottom: #ccc 1px solid; position: relative}
+.content {clear: both; padding-right: 0px; padding-left: 35%; font-size: 13px; float: left; padding-bottom: 0px; margin: 0px; width: 100%; line-height: 19px; padding-top: 0px; position: relative;}
+.content ul {padding-right: 35px; padding-left: 35px; padding-bottom: 20px; margin: 0px; padding-top: 10px}
+.content ul li {margin-bottom: 5px;}
+a{color:blue; font-size: 12px; text-decoration:none}
+a:hover {color: red;}
+
+</style>
+</head>
+
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr>
+	<td align="center" style="padding-top:60px;"><h1>404</h1></td>
+</tr>
+<tr>
+	<td align="center"><h2>抱歉，找不到您需要的页面>>>>>>>></h2></td>
+</tr>
+<tr>
+<form name="loading">
+<td align="center">
+<p><font color="gray">正在返回上一页，请稍候.......</font></p>
+<p>
+<input type="text" name="chart" size="46" style="font-family:Arial;
+font-weight:bolder; color:gray;
+background-color:white; padding:0px; border-style:none;">
+<br>
+<input type="text" name="percent" size="46" style="font-family:Arial;
+color:gray; text-align:center;
+border-width:medium; border-style:none;">
+<script>
+var bar = 0;
+var line = "||";
+var amount ="||";
+count();
+function count(){
+	bar= bar+2;
+	amount =amount + line;
+	document.loading.chart.value=amount;
+	document.loading.percent.value=bar+"%";
+	if (bar<99){
+		setTimeout("count()",100);
+	}else{
+		history.back();
+	}
+}
+</script>
+</p>
+<br/>
+</td>
+</form>
+</tr>
+<tr>
+<td>
+<div class="content"><strong>仔细找过啦,没有发现你要找的页面.最可能的原因是： </strong>
+<ul>
+  <li>在地址中可能存在键入错误</li>
+  <li>当你点击某个链接时，它可能已过期 </li>
+  <li><a href="javascript:history.back();">点击返回上一页</a></li>
+  <li><a href="javascript:void(0);" onclick="javascript:window.location='http://gom.sqeservice.com';">点击返回首页</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

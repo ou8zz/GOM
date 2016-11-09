@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/!svn/ver/34/gom/src/main/java/com/sqe/gom/security
+END
+CustomInvocationSecurityMetadataSourceService.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/!svn/ver/37/gom/src/main/java/com/sqe/gom/security/CustomInvocationSecurityMetadataSourceService.java
+END
+GomFilterSecurityInterceptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/!svn/ver/36/gom/src/main/java/com/sqe/gom/security/GomFilterSecurityInterceptor.java
+END
+UserDetailService.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/!svn/ver/36/gom/src/main/java/com/sqe/gom/security/UserDetailService.java
+END
+LoginPoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/36/gom/src/main/java/com/sqe/gom/security/LoginPoint.java
+END
+LogoutPoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/36/gom/src/main/java/com/sqe/gom/security/LogoutPoint.java
+END
+LogoutHandle.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/36/gom/src/main/java/com/sqe/gom/security/LogoutHandle.java
+END
+GomUserDetails.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/36/gom/src/main/java/com/sqe/gom/security/GomUserDetails.java
+END
+GomAccessDecisionManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/37/gom/src/main/java/com/sqe/gom/security/GomAccessDecisionManager.java
+END
+LoginSuccessHandle.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/36/gom/src/main/java/com/sqe/gom/security/LoginSuccessHandle.java
+END
+AjaxAccessDeniedHandlerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/!svn/ver/36/gom/src/main/java/com/sqe/gom/security/AjaxAccessDeniedHandlerImpl.java
+END
+LoginFailureHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/!svn/ver/36/gom/src/main/java/com/sqe/gom/security/LoginFailureHandler.java
+END

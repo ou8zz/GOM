@@ -1,0 +1,39 @@
+#res_tab, .project_tab{margin-left: 40px; float:left;}
+#res_tab th, #res_tab td, .trace_tab th, .trace_tab td, .project_tab th, .project_tab td{color:#333;border-collapse:collapse;border:1px solid #aabcfe; padding:3px;}
+#res_tab th, .trace_tab th, .project_tab th{background-color:#b9c9fe;text-align:center;vertical-align:middle;font-weight:bold;}
+#res_tab td.bg, .trace_tab td.bg, .project_tab td.bg{background-color:#e8edff;text-align:center;}
+#res_tab td.trg, .trace_tab td.trg ,.project_tab td.trg{text-align:right;vertical-align:middle;background-color:#e8edff;}
+#res_tab td.nob_t_b, .trace_tab td.nob_t_b, .project_tab td.nob_t_b{border-top:none;border-bottom:none;text-align:center;}
+#res_tab td.nob_l_r, .trace_tab td.nob_l_r, .project_tab td.nob_l_r{border-left:none;border-right:none;text-align:center;}
+#res_tab td.nobo, .trace_tab td.nobo, .project_tab td.nobo{border:none;text-align:center;}
+.tr_con:hover{border:1px solid #a6c9e2;background-color:#d0e5f5;text-decoration:none;}
+.tr_con td{border:1px solid #a6c9e2;}
+
+.process{position:relative; margin:0px 0;padding:1px 0;}
+.process img.arrow{margin-left:12px;}
+.process table{float:right; margin-top: 5px;}
+
+#lf dd {width:320px; height:58px; float:left;}
+#lf dd label.lab{font-size:1.1em;line-height:26px;height:26px;color:#0E5080;margin-left:35px;}
+#lf dd textarea.area{float:right;border:1px solid #628EB1;;margin-left:5px;width:200px;font-size:1em;}
+#lf dd input.inp,#lf dd select.inp{float:right;border:1px solid #628EB1;height:22px;line-height:22px;margin-left:5px;width:200px;font-size:1.1em;margin-top:10px;}
+#lf dd input.minp,#lf dd select.minp{float:right;border:1px solid #628EB1;height:22px;line-height:22px;margin-left:5px;width:95px;font-size:1.1em;margin-top:10px;}
+
+#task{position:relative;border-bottom:1px solid #36F;}
+#task span{padding-left:10px;}
+#task p{padding:0;float:right;}
+#task p em{padding-left:20px;color:#F00;font-style:normal;}
+#describe,#staff{position:relative;}
+#describe label{float:left;width:80px;}
+#describe p{width:474px;float:left;}
+#staff label{float:left;width:150px;}
+#t_foot{position:relative;text-align:left;padding:5px;margin-top:10px;}
+#t_foot span,#t_foot img.arrow{display:block;float:left;}
+#t_foot img.arrow{padding-top:15px;}
+
+#lf dd.tonggou{width: 500px;}
+dd.tonggou h6{float:left;display:inline;}
+dd.tonggou label{float:left;width:50px;}
+dd.tonggou input{width:10px;float:left;}
+
+.error{color:red; margin-left: 10px;}

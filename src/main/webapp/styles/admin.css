@@ -1,0 +1,15 @@
+@charset "utf-8";
+@import url("960_24_col.css");
+@import url("zTree.css");
+/* layout */
+#header{height:100px;background-color:#8F9E28}
+#header h2{text-indent:-9999px;}
+#footer{text-align:center;margin:20px 0;}
+#footer li{display:inline;}
+#choiceGroup{font-size:1em;margin:10px 0;}
+#choiceGroup select{margin-left:5px;width:150px;height:18px;line-height:18px;}
+#gf dd{width:400px;height:38px;line-height:38px;position:relative;}
+#gf dd label{width:80px;float:left;text-align:right;display:block;color:#0E5080;height:22px;line-height:22px;margin-right:5px;}
+#gf dd label.lab{width:40px;float:left;}
+#gf dd input, #gf dd select{float:left;border:1px solid #628EB1;margin:2px;width:305px;height:18px;line-height:18px;}
+#gf dd input.inp{width:20px;float:left;border:none;}

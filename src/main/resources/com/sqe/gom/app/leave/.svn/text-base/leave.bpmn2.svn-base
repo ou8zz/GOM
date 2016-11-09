@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<definitions id="Definition"
+             targetNamespace="http://www.jboss.org/drools"
+             typeLanguage="http://www.java.com/javaTypes"
+             expressionLanguage="http://www.mvel.org/2.0"
+             xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd"
+             xmlns:g="http://www.jboss.org/drools/flow/gpd"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+             xmlns:tns="http://www.jboss.org/drools">
+
+  <itemDefinition id="_leaveItem" structureRef="com.sqe.gom.model.Leave" />
+  <itemDefinition id="_stateItem" structureRef="com.sqe.gom.constant.LeaveProcess" />
+  <itemDefinition id="_atbItem" structureRef="String" />
+  <itemDefinition id="_CcItem" structureRef="String" />
+  <itemDefinition id="_daysDtrItem" structureRef="Integer" />
+  <itemDefinition id="_daysMgrItem" structureRef="Integer" />
+  <itemDefinition id="_toItem" structureRef="String" />
+  <itemDefinition id="_agentItem" structureRef="com.sqe.gom.vo.UserGroup" />
+  <itemDefinition id="_ceoItem" structureRef="com.sqe.gom.vo.UserGroup" />
+  <itemDefinition id="_directorItem" structureRef="com.sqe.gom.vo.UserGroup" />
+  <itemDefinition id="_managerItem" structureRef="com.sqe.gom.vo.UserGroup" />
+  <itemDefinition id="_assistantItem" structureRef="com.sqe.gom.vo.UserGroup" />
+  <itemDefinition id="_btbItem" structureRef="String" />
+  <itemDefinition id="_commentItem" structureRef="String" />
+  <itemDefinition id="_companyItem" structureRef="String" />
+  <itemDefinition id="_pubDateItem" structureRef="String" />
+  <itemDefinition id="_startDateItem" structureRef="String" />
+  <itemDefinition id="_endDateItem" structureRef="String" />
+  <itemDefinition id="_subjectItem" structureRef="String" />
+
+  <process processType="Private" isExecutable="true" id="com.sqe.gom.app.leave" name="LeaveTask" >
+
+    <extensionElements>
+     <tns:import name="com.sqe.gom.constant.LeaveProcess" />
+     <tns:import name="com.sqe.gom.vo.UserGroup" />
+     <tns:import name="java.text.SimpleDateFormat" />
+     <tns:import name="java.util.Date" />
+    </extensionElements>
+    <!-- process variables -->
+    <property id="leave" itemSubjectRef="_leaveItem"/>
+    <property id="state" itemSubjectRef="_stateItem"/>
+    <property id="atb" itemSubjectRef="_atbItem"/>
+    <property id="Cc" itemSubjectRef="_CcItem"/>
+    <property id="daysDtr" itemSubjectRef="_daysDtrItem"/>
+    <property id="daysMgr" itemSubjectRef="_daysMgrItem"/>
+    <property id="to" itemSubjectRef="_toItem"/>
+    <property id="agent" itemSubjectRef="_agentItem"/>
+    <property id="ceo" itemSubjectRef="_ceoItem"/>
+    <property id="director" itemSubjectRef="_directorItem"/>
+    <property id="manager" itemSubjectRef="_managerItem"/>
+    <property id="assistant" itemSubjectRef="_assistantItem"/>
+    <property id="btb" itemSubjectRef="_btbItem"/>
+    <property id="comment" itemSubjectRef="_commentItem"/>
+    <property id="company" itemSubjectRef="_companyItem"/>
+    <property id="pubDate" itemSubjectRef="_pubDateItem"/>
+    <property id="startDate" itemSubjectRef="_startDateItem"/>
+    <property id="endDate" itemSubjectRef="_endDateItem"/>
+    <property id="subject" itemSubjectRef="_subjectItem"/>
+
+    <!-- nodes -->
+    <startEvent id="_1" name="Start" />
+    <exclusiveGateway id="_2" name="revokeNew" gatewayDirection="Converging" />
+    <userTask id="_3" name="Apply" >
+      <extensionElements>
+        <tns:onExit-script scriptFormat="http://www.java.com/java">
+          <script>UserGroup ug = (UserGroup)leave.getApplicant(); 
+          if(ug.getPosition().equals("Manager") || ug.getPosition().equals("Assistant")) state=LeaveProcess.FORWORDPM;
+ else state=LeaveProcess.NEW; leave.setState(state); kcontext.setVariable("to", ug.getEmail());
+ if(comment != null &amp;&amp; !"".equals(comment)){comment=ug.getEname() + ": " + leave.getState().getDes() + ", " + comment + "&lt;br/&gt;" + leave.getComment(); leave.setComment(comment);}
+           </script>
+        </tns:onExit-script>
+      </extensionElements>
+      <ioSpecification>
+        <dataInput id="_3_leaveInput" name="leave" />
+        <dataInput id="_3_CommentInput" name="Comment" />
+        <dataInput id="_3_SkippableInput" name="Skippable" />
+        <dataInput id="_3_TaskNameInput" name="TaskName" />
+        <dataInput id="_3_ContentInput" name="Content" />
+        <dataOutput id="_3_stateOutput" name="state" />
+        <inputSet>
+          <dataInputRefs>_3_leaveInput</dataInputRefs>
+          <dataInputRefs>_3_CommentInput</dataInputRefs>
+          <dataInputRefs>_3_SkippableInput</dataInputRefs>
+          <dataInputRefs>_3_TaskNameInput</dataInputRefs>
+          <dataInputRefs>_3_ContentInput</dataInputRefs>
+        </inputSet>
+        <outputSet>
+          <dataOutputRefs>_3_stateOutput</dataOutputRefs>
+        </outputSet>
+      </ioSpecification>
+      <dataInputAssociation>
+        <sourceRef>leave</sourceRef>
+        <targetRef>_3_leaveInput</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_3_CommentInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">#{leave.comment}</from>
+          <to xsi:type="tFormalExpression">_3_CommentInput</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_3_SkippableInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">false</from>
+          <to xsi:type="tFormalExpression">_3_SkippableInput</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_3_TaskNameInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">Apply</from>
+          <to xsi:type="tFormalExpression">_3_TaskNameInput</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_3_ContentInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">#{leave}</from>
+          <to xsi:type="tFormalExpression">_3_ContentInput</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataOutputAssociation>
+        <sourceRef>_3_stateOutput</sourceRef>
+        <targetRef>state</targetRef>
+      </dataOutputAssociation>
+      <potentialOwner>
+        <resourceAssignmentExpression>
+          <formalExpression>#{leave.applicant.ename}</formalExpression>
+        </resourceAssignmentExpression>
+      </potentialOwner>
+    </userTask>
+    <exclusiveGateway id="_4" name="whoApply" gatewayDirection="Diverging" />
+    <userTask id="_5" name="Agent" >
+      <extensionElements>
+        <tns:onExit-script scriptFormat="http://www.java.com/java">
+          <script>if(to != null &amp;&amp; !"".equals(to)) to += ";" + agent.getEmail();
+ else to = agent.getEmail(); kcontext.setVariable("to",to); if(leave.getApplicant().getPosition().equals("Director")){state=LeaveProcess.FORWORDPM;} leave.setState(state); 
+ if(comment != null &amp;&amp; !"".equals(comment)){agent.setComment(leave.getState().getDes() + ", " + comment); comment=agent.getEname() + ": " + agent.getComment() + "&lt;br/&gt;" + leave.getComment(); leave.setComment(comment);}
+          kcontext.setVariable("atb", "&lt;tr&gt;&lt;td colspan='5'&gt;&lt;table id='sub3' width='630' border='0' cellpadding='0' cellspacing='0'&gt;&lt;tr&gt;&lt;td width='70'&gt;职务代理人&lt;/td&gt;&lt;td width='90' style='color:#669;'&gt;"+leave.getAgent()+"&lt;/td&gt;&lt;td width='70'&gt;代理人工员&lt;/td&gt;&lt;td width='90' style='color:#669;'&gt;"+agent.getJobNo()+"&lt;/td&gt;&lt;td width='70'&gt;代理人意见&lt;/td&gt;&lt;td width='240' style='color:#039;'&gt;"+agent.getComment()+"&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;"); 
+           </script>
+        </tns:onExit-script>
+      </extensionElements>
+      <ioSpecification>
+        <dataInput id="_5_leaveInput" name="leave" />
+        <dataInput id="_5_CommentInput" name="Comment" />
+        <dataInput id="_5_SkippableInput" name="Skippable" />
+        <dataInput id="_5_TaskNameInput" name="TaskName" />
+        <dataInput id="_5_ContentInput" name="Content" />
+        <dataOutput id="_5_stateOutput" name="state" />
+        <dataOutput id="_5_commentOutput" name="comment" />
+        <inputSet>
+          <dataInputRefs>_5_leaveInput</dataInputRefs>
+          <dataInputRefs>_5_CommentInput</dataInputRefs>
+          <dataInputRefs>_5_SkippableInput</dataInputRefs>
+          <dataInputRefs>_5_TaskNameInput</dataInputRefs>
+          <dataInputRefs>_5_ContentInput</dataInputRefs>
+        </inputSet>
+        <outputSet>
+          <dataOutputRefs>_5_stateOutput</dataOutputRefs>
+          <dataOutputRefs>_5_commentOutput</dataOutputRefs>
+        </outputSet>
+      </ioSpecification>
+      <dataInputAssociation>
+        <sourceRef>leave</sourceRef>
+        <targetRef>_5_leaveInput</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_5_CommentInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">#{agent.comment}</from>
+          <to xsi:type="tFormalExpression">_5_CommentInput</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_5_SkippableInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">false</from>
+          <to xsi:type="tFormalExpression">_5_SkippableInput</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_5_TaskNameInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">Agent</from>
+          <to xsi:type="tFormalExpression">_5_TaskNameInput</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_5_ContentInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">#{leave}</from>
+          <to xsi:type="tFormalExpression">_5_ContentInput</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataOutputAssociation>
+        <sourceRef>_5_stateOutput</sourceRef>
+        <targetRef>state</targetRef>
+      </dataOutputAssociation>
+      <dataOutputAssociation>
+        <sourceRef>_5_commentOutput</sourceRef>
+        <targetRef>comment</targetRef>
+      </dataOutputAssociation>
+      <potentialOwner>
+        <resourceAssignmentExpression>
+          <formalExpression>#{leave.agent}</formalExpression>
+        </resourceAssignmentExpression>
+      </potentialOwner>
+    </userTask>
+    <userTask id="_6" name="CEO" >
+      <extensionElements>
+        <tns:onExit-script scriptFormat="http://www.java.com/java">
+          <script>leave.setState(state); if(to != null &amp;&amp; !"".equals(to)) to += ";" + ceo.getEmail(); 
+          else to = ceo.getEmail(); kcontext.setVariable("to",to);
+if(comment != null &amp;&amp; !"".equals(comment)){
+ceo.setComment(leave.getState().getDes() + ", " + comment); comment=ceo.getEname() + ": " + ceo.getComment() + "&lt;br/&gt;" + leave.getComment();leave.setComment(comment);}
+if(leave.getState()==LeaveProcess.APPROVAL){kcontext.setVariable("btb","&lt;tr&gt;&lt;td colspan='5'&gt;&lt;table id='sub4' width='630' border='0' cellspacing='0' cellpadding='0'&gt;&lt;tr&gt;&lt;th width='60' rowspan='1'&gt;核  准&lt;/th&gt;&lt;td width='60'&gt;总经理&lt;/td&gt;&lt;td width='120' style='color:#669;'&gt;"+ceo.getEname()+"&lt;/td&gt;&lt;td width='40'&gt;意  见&lt;/td&gt;&lt;td width='350' style='color:#039;'&gt;"+ceo.getComment()+"&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;");}
+          </script>
+        </tns:onExit-script>
+      </extensionElements>
+      <ioSpecification>
+        <dataInput id="_6_CommentInput" name="Comment" />
+        <dataInput id="_6_SkippableInput" name="Skippable" />
+        <dataInput id="_6_TaskNameInput" name="TaskName" />
+        <dataInput id="_6_ContentInput" name="Content" />
+        <dataOutput id="_6_stateOutput" name="state" />
+        <dataOutput id="_6_commentOutput" name="comment" />
+        <inputSet>
+          <dataInputRefs>_6_CommentInput</dataInputRefs>
+          <dataInputRefs>_6_SkippableInput</dataInputRefs>
+          <dataInputRefs>_6_TaskNameInput</dataInputRefs>
+          <dataInputRefs>_6_ContentInput</dataInputRefs>
+        </inputSet>
+        <outputSet>
+          <dataOutputRefs>_6_stateOutput</dataOutputRefs>
+          <dataOutputRefs>_6_commentOutput</dataOutputRefs>
+        </outputSet>
+      </ioSpecification>
+      <dataInputAssociation>
+        <targetRef>_6_CommentInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">#{ceo.comment}</from>
+          <to xsi:type="tFormalExpression">_6_CommentInput</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_6_SkippableInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">false</from>
+          <to xsi:type="tFormalExpression">_6_SkippableInput</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_6_TaskNameInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">CEO</from>
+          <to xsi:type="tFormalExpression">_6_TaskNameInput</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_6_ContentInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">#{leave}</from>
+          <to xsi:type="tFormalExpression">_6_ContentInput</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataOutputAssociation>
+        <sourceRef>_6_stateOutput</sourceRef>
+        <targetRef>state</targetRef>
+      </dataOutputAssociation>
+      <dataOutputAssociation>
+        <sourceRef>_6_commentOutput</sourceRef>
+        <targetRef>comment</targetRef>
+      </dataOutputAssociation>
+      <potentialOwner>
+        <resourceAssignmentExpression>
+          <formalExpression>#{ceo.ename}</formalExpression>
+        </resourceAssignmentExpression>
+      </potentialOwner>
+    </userTask>
+    <exclusiveGateway id="_7" name="agentDecisioni" gatewayDirection="Diverging" />
+    <exclusiveGateway id="_8" name="CEODecision" gatewayDirection="Diverging" />
+    <exclusiveGateway id="_9" name="toDirector" gatewayDirection="Converging" />
+    <exclusiveGateway id="_10" name="toManager" gatewayDirection="Converging" />
+    <userTask id="_11" name="Director" >
+      <extensionElements>
+        <tns:onExit-script scriptFormat="http://www.java.com/java">
+          <script>if(leave.getDays() &gt; daysDtr &amp;&amp; state == LeaveProcess.APPROVAL){state=LeaveProcess.FORWORDPM;} kcontext.setVariable("Cc", director.getEmail());leave.setState(state);
+if(comment != null &amp;&amp; !"".equals(comment)){
+director.setComment(leave.getState().getDes() + ", " + comment); comment=director.getEname() + ": " + director.getComment() + "&lt;br/&gt;" + leave.getComment(); leave.setComment(comment);}
+if(leave.getState() == LeaveProcess.APPROVAL){kcontext.setVariable("btb", "&lt;tr&gt;&lt;td colspan='5'&gt;&lt;table id='sub4' width='630' border='0' cellspacing='0' cellpadding='0'&gt;&lt;tr&gt;&lt;th width='60' rowspan='1'&gt;核  准&lt;/th&gt;&lt;td width='60'&gt;直接主管&lt;/td&gt;&lt;td width='120' style='color:#669;'&gt;"+director.getEname()+"&lt;/td&gt;&lt;td width='40'&gt;意  见&lt;/td&gt;&lt;td width='350' style='color:#039;'&gt;"+director.getComment()+"&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;");}
+         </script>
+        </tns:onExit-script>
+      </extensionElements>
+      <ioSpecification>
+        <dataInput id="_11_leaveInput" name="leave" />
+        <dataInput id="_11_CommentInput" name="Comment" />
+        <dataInput id="_11_SkippableInput" name="Skippable" />
+        <dataInput id="_11_TaskNameInput" name="TaskName" />
+        <dataInput id="_11_ContentInput" name="Content" />
+        <dataOutput id="_11_stateOutput" name="state" />
+        <dataOutput id="_11_commentOutput" name="comment" />
+        <inputSet>
+          <dataInputRefs>_11_leaveInput</dataInputRefs>
+          <dataInputRefs>_11_CommentInput</dataInputRefs>
+          <dataInputRefs>_11_SkippableInput</dataInputRefs>
+          <dataInputRefs>_11_TaskNameInput</dataInputRefs>
+          <dataInputRefs>_11_ContentInput</dataInputRefs>
+        </inputSet>
+        <outputSet>
+          <dataOutputRefs>_11_stateOutput</dataOutputRefs>
+          <dataOutputRefs>_11_commentOutput</dataOutputRefs>
+        </outputSet>
+      </ioSpecification>
+      <dataInputAssociation>
+        <sourceRef>leave</sourceRef>
+        <targetRef>_11_leaveInput</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_11_CommentInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">#{director.comment}</from>
+          <to xsi:type="tFormalExpression">_11_CommentInput</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_11_SkippableInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">false</from>
+          <to xsi:type="tFormalExpression">_11_SkippableInput</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_11_TaskNameInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">Director</from>
+          <to xsi:type="tFormalExpression">_11_TaskNameInput</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_11_ContentInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">#{leave}</from>
+          <to xsi:type="tFormalExpression">_11_ContentInput</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataOutputAssociation>
+        <sourceRef>_11_stateOutput</sourceRef>
+        <targetRef>state</targetRef>
+      </dataOutputAssociation>
+      <dataOutputAssociation>
+        <sourceRef>_11_commentOutput</sourceRef>
+        <targetRef>comment</targetRef>
+      </dataOutputAssociation>
+      <potentialOwner>
+        <resourceAssignmentExpression>
+          <formalExpression>#{director.ename}</formalExpression>
+        </resourceAssignmentExpression>
+      </potentialOwner>
+    </userTask>
+    <userTask id="_12" name="Manager" >
+      <extensionElements>
+        <tns:onExit-script scriptFormat="http://www.java.com/java">
+          <script>if(Cc != null &amp;&amp; !"".equals(Cc)) Cc += ";" + manager.getEmail(); else Cc = manager.getEmail(); kcontext.setVariable("Cc", Cc);
+if(leave.getDays() &gt; daysMgr &amp;&amp; state==LeaveProcess.APPROVAL){state=LeaveProcess.FORWORDPM;} leave.setState(state);
+if(comment != null &amp;&amp; !"".equals(comment)){manager.setComment(leave.getState().getDes() + ", " + comment); comment=manager.getEname() + ": " + manager.getComment() + "&lt;br/&gt;" + leave.getComment();leave.setComment(comment);}
+if(leave.getState()==LeaveProcess.APPROVAL){kcontext.setVariable("btb", "&lt;tr&gt;&lt;td colspan='5'&gt;&lt;table id='sub4' width='630' border='0' cellspacing='0' cellpadding='0'&gt;&lt;tr&gt;&lt;th width='60' rowspan='2'&gt;核  准&lt;/th&gt;&lt;td width='60'&gt;直接主管&lt;/td&gt;&lt;td width='120' style='color:#669;'&gt;"+director.getEname()+"&lt;/td&gt;&lt;td width='40'&gt;意  见&lt;/td&gt;&lt;td width='350' style='color:#039;'&gt;"+director.getComment()+"&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='60'&gt;部门经理&lt;/td&gt;&lt;td width='120' style='color:#669;'&gt;"+manager.getEname()+"&lt;/td&gt;&lt;td width='40'&gt;意  见&lt;/td&gt;&lt;td width='350' style='color:#039;'&gt;"+manager.getComment()+"&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;");}
+        </script>
+        </tns:onExit-script>
+      </extensionElements>
+      <ioSpecification>
+        <dataInput id="_12_leaveInput" name="leave" />
+        <dataInput id="_12_CommentInput" name="Comment" />
+        <dataInput id="_12_SkippableInput" name="Skippable" />
+        <dataInput id="_12_ContentInput" name="Content" />
+        <dataInput id="_12_TaskNameInput" name="TaskName" />
+        <dataOutput id="_12_stateOutput" name="state" />
+        <dataOutput id="_12_commentOutput" name="comment" />
+        <inputSet>
+          <dataInputRefs>_12_leaveInput</dataInputRefs>
+          <dataInputRefs>_12_CommentInput</dataInputRefs>
+          <dataInputRefs>_12_SkippableInput</dataInputRefs>
+          <dataInputRefs>_12_ContentInput</dataInputRefs>
+          <dataInputRefs>_12_TaskNameInput</dataInputRefs>
+        </inputSet>
+        <outputSet>
+          <dataOutputRefs>_12_stateOutput</dataOutputRefs>
+          <dataOutputRefs>_12_commentOutput</dataOutputRefs>
+        </outputSet>
+      </ioSpecification>
+      <dataInputAssociation>
+        <sourceRef>leave</sourceRef>
+        <targetRef>_12_leaveInput</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_12_CommentInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">#{manager.comment}</from>
+          <to xsi:type="tFormalExpression">_12_CommentInput</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_12_SkippableInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">false</from>
+          <to xsi:type="tFormalExpression">_12_SkippableInput</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_12_ContentInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">#{leave}</from>
+          <to xsi:type="tFormalExpression">_12_ContentInput</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_12_TaskNameInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">Manager</from>
+          <to xsi:type="tFormalExpression">_12_TaskNameInput</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataOutputAssociation>
+        <sourceRef>_12_stateOutput</sourceRef>
+        <targetRef>state</targetRef>
+      </dataOutputAssociation>
+      <dataOutputAssociation>
+        <sourceRef>_12_commentOutput</sourceRef>
+        <targetRef>comment</targetRef>
+      </dataOutputAssociation>
+      <potentialOwner>
+        <resourceAssignmentExpression>
+          <formalExpression>#{manager.ename}</formalExpression>
+        </resourceAssignmentExpression>
+      </potentialOwner>
+    </userTask>
+    <exclusiveGateway id="_13" name="directorDecision" gatewayDirection="Diverging" />
+    <exclusiveGateway id="_14" name="managerDecision" gatewayDirection="Diverging" />
+    <userTask id="_15" name="Assistant" >
+      <extensionElements>
+        <tns:onExit-script scriptFormat="http://www.java.com/java">
+          <script>leave.setState(state); if(Cc != null &amp;&amp; !"".equals(Cc)) Cc += ";" + assistant.getEmail(); else Cc = assistant.getEmail(); kcontext.setVariable("Cc", Cc);
+if(comment != null &amp;&amp; !"".equals(comment)){assistant.setComment(leave.getState().getDes() + ", " + comment); comment=assistant.getEname() + ": " + assistant.getComment() + "&lt;br/&gt;" + leave.getComment(); leave.setComment(comment);}
+if(state==LeaveProcess.APPROVAL)kcontext.setVariable("btb", "&lt;tr&gt;&lt;td colspan='5'&gt;&lt;table id='sub4' width='630' border='0' cellspacing='0' cellpadding='0'&gt;&lt;tr&gt;&lt;th width='60' rowspan='3'&gt;核  准&lt;/th&gt;&lt;td width='60'&gt;直接主管&lt;/td&gt;&lt;td width='120' style='color:#669;'&gt;"+director.getEname()+"&lt;/td&gt;&lt;td width='40'&gt;意  见&lt;/td&gt;&lt;td width='350' style='color:#039;'&gt;"+director.getComment()+"&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='60'&gt;部门经理&lt;/td&gt;&lt;td width='120' style='color:#669;'&gt;"+manager.getEname()+"&lt;/td&gt;&lt;td width='40'&gt;意  见&lt;/td&gt;&lt;td width='350' style='color:#039;'&gt;"+manager.getComment()+"&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width='60'&gt;人事主管&lt;/td&gt;&lt;td width='120' style='color:#669;'&gt;"+assistant.getEname()+"&lt;/td&gt;&lt;td width='40'&gt;意  见&lt;/td&gt;&lt;td width='350' style='color:#039;'&gt;"+assistant.getComment()+"&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;");
+         </script>
+        </tns:onExit-script>
+      </extensionElements>
+      <ioSpecification>
+        <dataInput id="_15_leaveInput" name="leave" />
+        <dataInput id="_15_CommentInput" name="Comment" />
+        <dataInput id="_15_SkippableInput" name="Skippable" />
+        <dataInput id="_15_ContentInput" name="Content" />
+        <dataInput id="_15_TaskNameInput" name="TaskName" />
+        <dataOutput id="_15_stateOutput" name="state" />
+        <dataOutput id="_15_commentOutput" name="comment" />
+        <inputSet>
+          <dataInputRefs>_15_leaveInput</dataInputRefs>
+          <dataInputRefs>_15_CommentInput</dataInputRefs>
+          <dataInputRefs>_15_SkippableInput</dataInputRefs>
+          <dataInputRefs>_15_ContentInput</dataInputRefs>
+          <dataInputRefs>_15_TaskNameInput</dataInputRefs>
+        </inputSet>
+        <outputSet>
+          <dataOutputRefs>_15_stateOutput</dataOutputRefs>
+          <dataOutputRefs>_15_commentOutput</dataOutputRefs>
+        </outputSet>
+      </ioSpecification>
+      <dataInputAssociation>
+        <sourceRef>leave</sourceRef>
+        <targetRef>_15_leaveInput</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_15_CommentInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">#{assistant.comment}</from>
+          <to xsi:type="tFormalExpression">_15_CommentInput</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_15_SkippableInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">false</from>
+          <to xsi:type="tFormalExpression">_15_SkippableInput</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_15_ContentInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">#{leave}</from>
+          <to xsi:type="tFormalExpression">_15_ContentInput</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_15_TaskNameInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">Assistant</from>
+          <to xsi:type="tFormalExpression">_15_TaskNameInput</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataOutputAssociation>
+        <sourceRef>_15_stateOutput</sourceRef>
+        <targetRef>state</targetRef>
+      </dataOutputAssociation>
+      <dataOutputAssociation>
+        <sourceRef>_15_commentOutput</sourceRef>
+        <targetRef>comment</targetRef>
+      </dataOutputAssociation>
+      <potentialOwner>
+        <resourceAssignmentExpression>
+          <formalExpression>#{assistant.ename}</formalExpression>
+        </resourceAssignmentExpression>
+      </potentialOwner>
+    </userTask>
+    <exclusiveGateway id="_17" name="toMail" gatewayDirection="Converging" />
+    <exclusiveGateway id="_16" name="assistantDecision" gatewayDirection="Diverging" />
+    <exclusiveGateway id="_19" name="toEnd" gatewayDirection="Converging" />
+    <task id="_18" name="Email" tns:taskName="Email" >
+      <extensionElements>
+        <tns:onEntry-script scriptFormat="http://www.java.com/java">
+          <script>pubDate=new SimpleDateFormat("yyyy-MM-dd HH:mm").format(new Date()); kcontext.setVariable("pubDate", pubDate); kcontext.setVariable("subject", leave.getApplicant().getEname()+ "申请" + leave.getDays()+ "天" + leave.getType().getDes() + "的批复结果");</script>
+        </tns:onEntry-script>
+      </extensionElements>
+      <ioSpecification>
+        <dataInput id="_18_CcInput" name="Cc" />
+        <dataInput id="_18_BodyInput" name="Body" />
+        <dataInput id="_18_SubjectInput" name="Subject" />
+        <dataInput id="_18_ToInput" name="To" />
+        <dataInput id="_18_FromInput" name="From" />
+        <inputSet>
+          <dataInputRefs>_18_CcInput</dataInputRefs>
+          <dataInputRefs>_18_BodyInput</dataInputRefs>
+          <dataInputRefs>_18_SubjectInput</dataInputRefs>
+          <dataInputRefs>_18_ToInput</dataInputRefs>
+          <dataInputRefs>_18_FromInput</dataInputRefs>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+      <dataInputAssociation>
+        <sourceRef>Cc</sourceRef>
+        <targetRef>_18_CcInput</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_18_BodyInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;head&gt;&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;&lt;title&gt;职员请假单 --#{company}&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;body{margin:0 auto;font:0.8em/150% verdana,simsung,arial,Tahoma,sans-serif;color:#333;line-height:1.6em;}#ltb h1{font-size:1em;}#ltb,#sub1,#sub2,#sub3,#sub4{font-size:0.9em;}#ltb{border-collapse:collapse;border:1px solid #333;}#ltb th{color:#333;}#ltb td{color:#666;border:1px double #333;}#sub1 td,#sub2 td,#sub3 td,#sub4 td{color:#666; border:0px; border-left:1px double #333;}#sub1 th{color:#666;border-left:1px double #333; color:#333;}#sub1 td{color:#039;}#sub1{background-color:#e8edff;}#sub4 td{border-bottom:1px double #333;}#sub1,#sub3{margin-left:-1px;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;br/&gt;&lt;table width=&quot;630&quot; border=&quot;0&quot; align=&quot;center&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; id=&quot;ltb&quot; summary=&quot;职员请假单&quot;&gt;&lt;caption&gt;#{company}&lt;h1&gt;职员请假单&lt;/h1&gt;&lt;/caption&gt;&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;&lt;table id=&quot;sub1&quot; width=&quot;630&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;th width=&quot;47&quot;&gt;工&amp;nbsp;号&lt;/th&gt;&lt;td width=&quot;109&quot;&gt;#{leave.applicant.jobNo}&lt;/td&gt;&lt;th width=&quot;47&quot;&gt;姓名&lt;/th&gt;&lt;td width=&quot;109&quot;&gt;#{leave.applicant.ename}&lt;/td&gt;&lt;th width=&quot;47&quot;&gt;部&amp;nbsp;门&lt;/th&gt;&lt;td width=&quot;109&quot;&gt;#{leave.applicant.department}&lt;/td&gt;&lt;th width=&quot;47&quot;&gt;职&amp;nbsp;务&lt;/th&gt;&lt;td width=&quot;106&quot;&gt;#{leave.applicant.position}&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th width=&quot;60&quot; rowspan=&quot;2&quot;&gt;时&amp;nbsp;间&lt;/th&gt;&lt;td width=&quot;120&quot; align=&quot;center&quot;&gt;开始时间&lt;/td&gt;&lt;td width=&quot;120&quot; align=&quot;center&quot;&gt;结束时间&lt;/td&gt;&lt;td width=&quot;60&quot; align=&quot;center&quot;&gt;申请天数&lt;/td&gt;&lt;td width=&quot;260&quot; align=&quot;center&quot;&gt;假期联系方式&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&quot;120&quot; style=&quot;color:#669;&quot;&gt;#{startDate}&lt;/td&gt;&lt;td width=&quot;120&quot; style=&quot;color:#669;&quot;&gt;#{endDate}&lt;/td&gt;&lt;td width=&quot;60&quot; align=&quot;center&quot; style=&quot;color:#669;&quot;&gt;#{leave.days}&lt;/td&gt;&lt;td width=&quot;260&quot; style=&quot;color:#669;&quot;&gt;#{leave.contact}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;&lt;table id=&quot;sub2&quot; width=&quot;630&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;th width=&quot;40&quot;&gt;类别&lt;/th&gt;&lt;td width=&quot;60&quot; style=&quot;color:#669;&quot;&gt;#{leave.type.des}&lt;/td&gt;&lt;td width=&quot;40&quot; align=&quot;center&quot;&gt;事由&lt;/td&gt;&lt;td width=&quot;490&quot; style=&quot;color:#669;&quot;&gt;#{leave.explain}&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th width=&quot;60&quot;&gt;事务交待&lt;/th&gt;&lt;td colspan=&quot;4&quot; width=&quot;580&quot; style=&quot;color:#039;&quot;&gt;#{leave.handOver}&lt;/td&gt;&lt;/tr&gt; #{atb} &lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;  #{btb}  &lt;tr&gt;&lt;td colspan=&quot;5&quot; align=&quot;right&quot;&gt;出单日期：#{pubDate}&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</from>
+          <to xsi:type="tFormalExpression">_18_BodyInput</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_18_SubjectInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">#{subject}</from>
+          <to xsi:type="tFormalExpression">_18_SubjectInput</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_18_ToInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">#{to}</from>
+          <to xsi:type="tFormalExpression">_18_ToInput</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_18_FromInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">gom-admin@sqeservice.com</from>
+          <to xsi:type="tFormalExpression">_18_FromInput</to>
+        </assignment>
+      </dataInputAssociation>
+    </task>
+    <endEvent id="_20" name="End" >
+        <terminateEventDefinition/>
+    </endEvent>
+
+    <!-- connections -->
+    <sequenceFlow id="_1-_2" sourceRef="_1" targetRef="_2" />
+    <sequenceFlow id="_7-_2" sourceRef="_7" targetRef="_2" >
+      <conditionExpression xsi:type="tFormalExpression" >return leave.state == LeaveProcess.DISAGREE;</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_8-_2" sourceRef="_8" targetRef="_2" >
+      <conditionExpression xsi:type="tFormalExpression" >return leave.state == LeaveProcess.REVOKE;</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_13-_2" sourceRef="_13" targetRef="_2" >
+      <conditionExpression xsi:type="tFormalExpression" >return leave.state == LeaveProcess.REVOKE;</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_14-_2" sourceRef="_14" targetRef="_2" >
+      <conditionExpression xsi:type="tFormalExpression" >return leave.state == LeaveProcess.REVOKE;</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_2-_3" sourceRef="_2" targetRef="_3" />
+    <sequenceFlow id="_3-_4" sourceRef="_3" targetRef="_4" />
+    <sequenceFlow id="_4-_5" sourceRef="_4" targetRef="_5" >
+      <conditionExpression xsi:type="tFormalExpression" >return leave.state == LeaveProcess.NEW;</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_4-_6" sourceRef="_4" targetRef="_6" >
+      <conditionExpression xsi:type="tFormalExpression" >return leave.state == LeaveProcess.FORWORDPM;</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_5-_7" sourceRef="_5" targetRef="_7" />
+    <sequenceFlow id="_6-_8" sourceRef="_6" targetRef="_8" />
+    <sequenceFlow id="_7-_9" sourceRef="_7" targetRef="_9" >
+      <conditionExpression xsi:type="tFormalExpression" >return leave.state == LeaveProcess.AGREE;</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_14-_9" sourceRef="_14" targetRef="_9" >
+      <conditionExpression xsi:type="tFormalExpression" >return leave.state == LeaveProcess.REVOKE;</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_7-_10" sourceRef="_7" targetRef="_10" >
+      <conditionExpression xsi:type="tFormalExpression" >return leave.state == LeaveProcess.FORWORDPM;</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_13-_10" sourceRef="_13" targetRef="_10" >
+      <conditionExpression xsi:type="tFormalExpression" >return leave.state == LeaveProcess.FORWORDPM;</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_16-_10" sourceRef="_16" targetRef="_10" >
+      <conditionExpression xsi:type="tFormalExpression" >return leave.state == LeaveProcess.REVOKE;</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_9-_11" sourceRef="_9" targetRef="_11" />
+    <sequenceFlow id="_10-_12" sourceRef="_10" targetRef="_12" />
+    <sequenceFlow id="_11-_13" sourceRef="_11" targetRef="_13" />
+    <sequenceFlow id="_12-_14" sourceRef="_12" targetRef="_14" />
+    <sequenceFlow id="_14-_15" sourceRef="_14" targetRef="_15" >
+      <conditionExpression xsi:type="tFormalExpression" >return leave.state == LeaveProcess.FORWORDPM;</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_16-_17" sourceRef="_16" targetRef="_17" >
+      <conditionExpression xsi:type="tFormalExpression" >return leave.state == LeaveProcess.APPROVAL;</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_8-_17" sourceRef="_8" targetRef="_17" >
+      <conditionExpression xsi:type="tFormalExpression" >return leave.state == LeaveProcess.APPROVAL;</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_14-_17" sourceRef="_14" targetRef="_17" >
+      <conditionExpression xsi:type="tFormalExpression" >return leave.state == LeaveProcess.APPROVAL;</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_13-_17" sourceRef="_13" targetRef="_17" >
+      <conditionExpression xsi:type="tFormalExpression" >return leave.state == LeaveProcess.APPROVAL;</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_15-_16" sourceRef="_15" targetRef="_16" />
+    <sequenceFlow id="_18-_19" sourceRef="_18" targetRef="_19" />
+    <sequenceFlow id="_16-_19" sourceRef="_16" targetRef="_19" >
+      <conditionExpression xsi:type="tFormalExpression" >return leave.state == LeaveProcess.REJECT;</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_8-_19" sourceRef="_8" targetRef="_19" >
+      <conditionExpression xsi:type="tFormalExpression" >return leave.state == LeaveProcess.REJECT;</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_14-_19" sourceRef="_14" targetRef="_19" >
+      <conditionExpression xsi:type="tFormalExpression" >return leave.state == LeaveProcess.REJECT;</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_13-_19" sourceRef="_13" targetRef="_19" >
+      <conditionExpression xsi:type="tFormalExpression" >return leave.state == LeaveProcess.REJECT;</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_4-_19" sourceRef="_4" targetRef="_19" >
+      <conditionExpression xsi:type="tFormalExpression" >return leave.state == LeaveProcess.ABORT;</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_17-_18" sourceRef="_17" targetRef="_18" />
+    <sequenceFlow id="_19-_20" sourceRef="_19" targetRef="_20" />
+
+  </process>
+
+  <bpmndi:BPMNDiagram>
+    <bpmndi:BPMNPlane bpmnElement="com.sqe.gom.app.leave" >
+      <bpmndi:BPMNShape bpmnElement="_1" >
+        <dc:Bounds x="46" y="64" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_2" >
+        <dc:Bounds x="150" y="67" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_3" >
+        <dc:Bounds x="254" y="23" width="100" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_4" >
+        <dc:Bounds x="430" y="25" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_5" >
+        <dc:Bounds x="356" y="126" width="100" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_6" >
+        <dc:Bounds x="503" y="120" width="100" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_7" >
+        <dc:Bounds x="368" y="208" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_8" >
+        <dc:Bounds x="646" y="64" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_9" >
+        <dc:Bounds x="259" y="281" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_10" >
+        <dc:Bounds x="417" y="287" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_11" >
+        <dc:Bounds x="70" y="281" width="100" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_12" >
+        <dc:Bounds x="677" y="287" width="100" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_13" >
+        <dc:Bounds x="191" y="438" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_14" >
+        <dc:Bounds x="471" y="413" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_15" >
+        <dc:Bounds x="297" y="411" width="100" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_17" >
+        <dc:Bounds x="494" y="575" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_16" >
+        <dc:Bounds x="343" y="575" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_19" >
+        <dc:Bounds x="614" y="464" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_18" >
+        <dc:Bounds x="588" y="576" width="100" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_20" >
+        <dc:Bounds x="712" y="465" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="_1-_2" >
+        <di:waypoint x="70" y="88" />
+        <di:waypoint x="174" y="91" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_7-_2" >
+        <di:waypoint x="392" y="232" />
+        <di:waypoint x="174" y="91" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_8-_2" >
+        <di:waypoint x="670" y="88" />
+        <di:waypoint x="174" y="91" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_13-_2" >
+        <di:waypoint x="215" y="462" />
+        <di:waypoint x="174" y="91" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_14-_2" >
+        <di:waypoint x="495" y="437" />
+        <di:waypoint x="174" y="91" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_2-_3" >
+        <di:waypoint x="174" y="91" />
+        <di:waypoint x="304" y="47" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_3-_4" >
+        <di:waypoint x="304" y="47" />
+        <di:waypoint x="454" y="49" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_4-_5" >
+        <di:waypoint x="454" y="49" />
+        <di:waypoint x="406" y="150" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_4-_6" >
+        <di:waypoint x="454" y="49" />
+        <di:waypoint x="553" y="144" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_5-_7" >
+        <di:waypoint x="406" y="150" />
+        <di:waypoint x="392" y="232" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_6-_8" >
+        <di:waypoint x="553" y="144" />
+        <di:waypoint x="670" y="88" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_7-_9" >
+        <di:waypoint x="392" y="232" />
+        <di:waypoint x="283" y="305" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_14-_9" >
+        <di:waypoint x="495" y="437" />
+        <di:waypoint x="283" y="305" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_7-_10" >
+        <di:waypoint x="392" y="232" />
+        <di:waypoint x="441" y="311" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_13-_10" >
+        <di:waypoint x="215" y="462" />
+        <di:waypoint x="441" y="311" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_16-_10" >
+        <di:waypoint x="367" y="599" />
+        <di:waypoint x="441" y="311" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_9-_11" >
+        <di:waypoint x="283" y="305" />
+        <di:waypoint x="120" y="305" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_10-_12" >
+        <di:waypoint x="441" y="311" />
+        <di:waypoint x="727" y="311" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_11-_13" >
+        <di:waypoint x="120" y="305" />
+        <di:waypoint x="215" y="462" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_12-_14" >
+        <di:waypoint x="727" y="311" />
+        <di:waypoint x="495" y="437" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_14-_15" >
+        <di:waypoint x="495" y="437" />
+        <di:waypoint x="347" y="435" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_16-_17" >
+        <di:waypoint x="367" y="599" />
+        <di:waypoint x="518" y="599" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_8-_17" >
+        <di:waypoint x="670" y="88" />
+        <di:waypoint x="518" y="599" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_14-_17" >
+        <di:waypoint x="495" y="437" />
+        <di:waypoint x="518" y="599" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_13-_17" >
+        <di:waypoint x="215" y="462" />
+        <di:waypoint x="518" y="599" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_15-_16" >
+        <di:waypoint x="347" y="435" />
+        <di:waypoint x="367" y="599" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_18-_19" >
+        <di:waypoint x="638" y="600" />
+        <di:waypoint x="638" y="488" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_16-_19" >
+        <di:waypoint x="367" y="599" />
+        <di:waypoint x="638" y="488" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_8-_19" >
+        <di:waypoint x="670" y="88" />
+        <di:waypoint x="638" y="488" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_14-_19" >
+        <di:waypoint x="495" y="437" />
+        <di:waypoint x="638" y="488" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_13-_19" >
+        <di:waypoint x="215" y="462" />
+        <di:waypoint x="638" y="488" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_4-_19" >
+        <di:waypoint x="454" y="49" />
+        <di:waypoint x="638" y="488" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_17-_18" >
+        <di:waypoint x="518" y="599" />
+        <di:waypoint x="638" y="600" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_19-_20" >
+        <di:waypoint x="638" y="488" />
+        <di:waypoint x="736" y="489" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+
+</definitions>

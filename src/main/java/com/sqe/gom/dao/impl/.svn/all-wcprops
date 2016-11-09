@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/!svn/ver/34/gom/src/main/java/com/sqe/gom/dao/impl
+END
+ProcessInfoDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/impl/ProcessInfoDAOImpl.java
+END
+LeaveDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/37/gom/src/main/java/com/sqe/gom/dao/impl/LeaveDAOImpl.java
+END
+TraceDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/impl/TraceDAOImpl.java
+END
+SignatureDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/impl/SignatureDAOImpl.java
+END
+ReportConfigDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/impl/ReportConfigDAOImpl.java
+END
+ConfigDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/impl/ConfigDAOImpl.java
+END
+UserRespDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/impl/UserRespDAOImpl.java
+END
+BorrowDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/impl/BorrowDAOImpl.java
+END
+TrainingDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/impl/TrainingDAOImpl.java
+END
+EducationDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/22/gom/src/main/java/com/sqe/gom/dao/impl/EducationDAOImpl.java
+END
+GenericHibernateDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/!svn/ver/24/gom/src/main/java/com/sqe/gom/dao/impl/GenericHibernateDAO.java
+END
+HolidaysDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/impl/HolidaysDAOImpl.java
+END
+UserDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/34/gom/src/main/java/com/sqe/gom/dao/impl/UserDAOImpl.java
+END
+FixedTaskDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/impl/FixedTaskDAOImpl.java
+END
+AddressDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/7/gom/src/main/java/com/sqe/gom/dao/impl/AddressDAOImpl.java
+END
+ResourceDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/4/gom/src/main/java/com/sqe/gom/dao/impl/ResourceDAOImpl.java
+END
+ExperienceDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/impl/ExperienceDAOImpl.java
+END
+MeetingDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/impl/MeetingDAOImpl.java
+END
+ZtreeDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/35/gom/src/main/java/com/sqe/gom/dao/impl/ZtreeDAOImpl.java
+END
+DepartureDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/impl/DepartureDAOImpl.java
+END
+AbnormalDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/!svn/ver/28/gom/src/main/java/com/sqe/gom/dao/impl/AbnormalDAOImpl.java
+END
+GroupDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/impl/GroupDAOImpl.java
+END
+SummaryDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/impl/SummaryDAOImpl.java
+END
+LieuDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/impl/LieuDAOImpl.java
+END
+TaskDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/impl/TaskDAOImpl.java
+END
+MottoDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/impl/MottoDAOImpl.java
+END
+ProjectDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/impl/ProjectDAOImpl.java
+END
+LoginDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/impl/LoginDAOImpl.java
+END
+ReportDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/20/gom/src/main/java/com/sqe/gom/dao/impl/ReportDAOImpl.java
+END
+CategoryDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/impl/CategoryDAOImpl.java
+END
+AssetDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/impl/AssetDAOImpl.java
+END
+ResponsibilityDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/impl/ResponsibilityDAOImpl.java
+END
+ProductDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/impl/ProductDAOImpl.java
+END
+LogDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/impl/LogDAOImpl.java
+END
+SwotConfigDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/2/gom/src/main/java/com/sqe/gom/dao/impl/SwotConfigDAOImpl.java
+END

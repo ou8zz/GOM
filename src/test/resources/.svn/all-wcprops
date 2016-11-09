@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/repos/!svn/ver/2/gom/src/test/resources
+END
+logo.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/repos/!svn/ver/2/gom/src/test/resources/logo.jpg
+END
+webdefault.xml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/!svn/ver/2/gom/src/test/resources/webdefault.xml
+END
+logo.png
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/repos/!svn/ver/2/gom/src/test/resources/logo.png
+END
+h2.properties
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/!svn/ver/2/gom/src/test/resources/h2.properties
+END
+gom-service-test.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/!svn/ver/2/gom/src/test/resources/gom-service-test.xml
+END
+jetty.xml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/repos/!svn/ver/2/gom/src/test/resources/jetty.xml
+END

@@ -1,0 +1,34 @@
+@charset "utf-8";
+@import url("960_24_col.css");
+@import url("zTree.css");
+@import url("uploadify.css");
+@import url("jcrop.css");
+#header{height:100px;background-color:#8F9E28}
+#header ul{float:right;margin:0 10px;position:relative;}
+#header ul li{list-style:none;float:left;margin:0;padding:0 5px}
+#footer{text-align:center;margin:20px 0;}
+#footer li{display:inline;}
+.warn,.error_msg{background-image:url(../images/tip.gif);background-repeat:no-repeat;background-color:transparent;width:16;height:16px;}
+.warn{background-position:0 -35px;padding-left:18px;margin:10px;color:#FC0}
+.error_msg{background-position:0 -17px;padding:0 20px;color:#F00;height:16px;line-height:16px;}
+#err{color:#F00}
+label.error{color:#F00;text-align:left;display:block;margin:0;padding:0;}
+.textarea .error{margin:0;width:155px;padding:0}
+#content{position:relative;}
+#content fieldset{padding:10px;margin-top:5px;border:1px solid #A2A09A;}
+#content fieldset legend{text-align:center;font-size:1em;font-weight:bold;padding:3px 20px;border:1px solid #666;background:#fff;}
+#content dl{position:relative;text-align:left;}
+dl dd{height:58px;line-height:58px;position:relative;}
+dl dd label{width:120px;text-align:right;vertical-align:central;line-height:28px;height:28px;color:#0E5080;}
+.textarea{height:48px;line-height:48px;position:relative;padding:12px 0;}
+.textarea label{width:65px;text-align:right;vertical-align:central;margin-right:5px;float:left;color:#0E5080;}
+.textarea textarea{font-size:.9em;float:left;}
+dl dd input,dl dd select{border:1px solid #628EB1;height:22px;line-height:22px;margin-left:5px;width:200px;}
+.submit_but{margin:30px 0 20px 120px;}
+.submit_but input,.submit_but input:hover{background-image:url(../images/submit_but.png);background-repeat:no-repeat;background-color:transparent;width:86px;height:25px;border-width:0;}
+.submit_but input{background-position:0 0;font-weight:bold;color:#069;cursor:pointer;}
+.submit_but input:hover{background-position:0 -25px;color:#BC2A4D;}
+table.gom_tb{clear:both;margin:15px 0;padding:0;border:0;width:100%;}
+table.gom_tb th,table.gom_tb td{border-collapse:collapse;border:1px solid #aabcfe;padding:3px;padding:10px 10px 6px;}
+table.gom_tb th{background-color:#b9c9fe;text-align:center;vertical-align:middle;font-weight:bold;}
+.choose{cursor:pointer;border:1px solid #fad42e;background:#fbec88 url(../images/jqimg/ui-bg_flat_55_fbec88_40x100.png) 50% 50% repeat-x;color: #363636;} 

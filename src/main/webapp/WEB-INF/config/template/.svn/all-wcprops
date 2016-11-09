@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/!svn/ver/21/gom/src/main/webapp/WEB-INF/config/template
+END
+departure.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/config/template/departure.ftl
+END
+entrant.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/config/template/entrant.ftl
+END
+report.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/config/template/report.ftl
+END
+leave.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/config/template/leave.ftl
+END
+signature.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/config/template/signature.ftl
+END
+register.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/config/template/register.ftl
+END
+morning.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/config/template/morning.ftl
+END

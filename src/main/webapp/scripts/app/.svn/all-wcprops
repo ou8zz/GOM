@@ -1,0 +1,269 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/repos/!svn/ver/32/gom/src/main/webapp/scripts/app
+END
+project.js
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/app/project.js
+END
+approval_task.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/app/approval_task.js
+END
+my_task.js
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/app/my_task.js
+END
+education.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/app/education.js
+END
+training.js
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/app/training.js
+END
+entrant_mail.js
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/app/entrant_mail.js
+END
+leaves.js
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/app/leaves.js
+END
+product.js
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/app/product.js
+END
+fixed_task.js
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/app/fixed_task.js
+END
+need_help.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/app/need_help.js
+END
+edit_user.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/!svn/ver/22/gom/src/main/webapp/scripts/app/edit_user.js
+END
+mgr_responsibility.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/35/gom/src/main/webapp/scripts/app/mgr_responsibility.js
+END
+address.js
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/app/address.js
+END
+experience.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/!svn/ver/2/gom/src/main/webapp/scripts/app/experience.js
+END
+resource.js
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/!svn/ver/32/gom/src/main/webapp/scripts/app/resource.js
+END
+responsibilities.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/app/responsibilities.js
+END
+get_leave_record.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/app/get_leave_record.js
+END
+departure.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/app/departure.js
+END
+respon_config.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/35/gom/src/main/webapp/scripts/app/respon_config.js
+END
+summary.js
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/app/summary.js
+END
+entrants.js
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/app/entrants.js
+END
+my_abnormal.js
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/app/my_abnormal.js
+END
+report_config.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/31/gom/src/main/webapp/scripts/app/report_config.js
+END
+save_pwd.js
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/!svn/ver/2/gom/src/main/webapp/scripts/app/save_pwd.js
+END
+borrow.js
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/!svn/ver/32/gom/src/main/webapp/scripts/app/borrow.js
+END
+holidays.js
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/app/holidays.js
+END
+abnormals.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/app/abnormals.js
+END
+departures.js
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/37/gom/src/main/webapp/scripts/app/departures.js
+END
+get_leaves.js
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/app/get_leaves.js
+END
+asset.js
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/!svn/ver/35/gom/src/main/webapp/scripts/app/asset.js
+END
+leaveForm.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/app/leaveForm.js
+END
+swotconfig.js
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/app/swotconfig.js
+END
+howtodo.js
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/!svn/ver/32/gom/src/main/webapp/scripts/app/howtodo.js
+END
+apply_asset.js
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/!svn/ver/35/gom/src/main/webapp/scripts/app/apply_asset.js
+END
+my_responsibility.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/!svn/ver/35/gom/src/main/webapp/scripts/app/my_responsibility.js
+END
+meeting.js
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/app/meeting.js
+END
+handle_asset.js
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/app/handle_asset.js
+END
+get_receipt.js
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/2/gom/src/main/webapp/scripts/app/get_receipt.js
+END
+receipt_asset.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/32/gom/src/main/webapp/scripts/app/receipt_asset.js
+END
+receipt.js
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/!svn/ver/2/gom/src/main/webapp/scripts/app/receipt.js
+END
+order_task.js
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/app/order_task.js
+END
+lieu.js
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/!svn/ver/30/gom/src/main/webapp/scripts/app/lieu.js
+END
+motto.js
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/!svn/ver/2/gom/src/main/webapp/scripts/app/motto.js
+END
+task.js
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/!svn/ver/35/gom/src/main/webapp/scripts/app/task.js
+END

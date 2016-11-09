@@ -1,0 +1,34 @@
+@import url("960_24_col.css");
+#header{background-color:#B2DD32;background-image:url(../images/header_login.jpg);background-repeat:repeat-x;height:90px;}
+#header h1{font-size:2.2em;line-height:82px;}
+#header h1 strong{color:#fff;}
+#header h1 sub{vertical-align:sub;font-size:0.7em;font-style:normal;}
+#report{color:#fff;font-weight:bold; margin-top:60px; text-align:right;}
+#content{margin-top:50px;}
+p{margin-top:1.5em;}
+fieldset.login{margin:5px 0 1.5em 0;border:1px solid #BFBAB0;padding:10px;border-left:1px solid #A2A09A;}
+legend{color:#0E5080;font-size:1.3em;font-weight:bold;padding:3px 20px 3px 20px;border:1px solid #666;}
+#loginForm{font-size:1.1em;position:relative;margin:10px 0 55px;}
+#loginForm label{float:left;line-height:22px;height:22px;padding-right:5px;text-align:right;color:#0E5080;}
+#loginForm input.inp{float:left;line-height:18px;height:18px;width:100px;border:1px solid #628EB1;padding:2px;margin-right:10px;}
+#loginForm a{float:left;margin-left:-10px;}
+div.submit_but{float:left;padding:0 5px;}
+div.submit_but input{margin:0 5px;}
+#status,#content .error{color:#c00;font-size:0.85em;text-align:left;}
+#status,#content label.error{background-image:url(../images/required.gif);background-position:left;background-repeat:no-repeat;display:none;margin-left:165px !important;}	
+form .highlight{background-color:#e2e2e2;}
+div.submit{margin:0 auto;text-align:center;}
+.submit_but input,.submit_but input:hover{background-image:url(../images/submit_but.png);background-repeat:no-repeat;background-color:transparent;width:86px;height:25px;border-width:0;}
+#sub_but{font-size:1em;font-weight:bold;cursor:pointer;}
+#content input.login_but{background-color:transparent;background-image:url(../images/aqua_but.png);background-repeat:no-repeat;width:120px;height:36px;background-position:0 0;border-width:0;}
+#content input.login_but:hover{background-position:0 -36px;color:#fff;}
+#rand_next{font-size:0.8em;margin-left:5px;}
+#footer{margin:0 auto;text-align:center;margin-top:80px;}
+#footer li{display:inline;}
+/* #gleft{border: 1px solid black;} */
+fieldset.login{border: 1px solid black; height: 57px;}
+fieldset.login legend{margin-left: 25px;}
+#content fieldset{border: 1px solid black; height: 570px;}
+#content fieldset legend{margin-left: 25%;}
+#gleft{margin-left: 20px;}
+#logs_main span.sp{color:blue;font-weight: bold; }

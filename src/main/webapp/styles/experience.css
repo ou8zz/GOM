@@ -1,0 +1,43 @@
+#trainDlg{position: absolute;visibility: hidden;overflow: hidden; border:1px solid #CCC;background-color:#F9F9F9;border:1px solid #333;padding:5px;}
+#gainDlg{padding:20px 0 180px 0;text-align:center;border:1px solid #628EB1;}
+#gainDlg textarea.textarea{border:1px solid #628EB1;}
+#ldlg td a {border-right: #ccc 1px solid; padding-right: 6px; background-position: 50% bottom; border-top: #ccc 1px solid; padding-left: 6px; font-weight: bold; padding-bottom: 2px; border-left: #ccc 1px solid; color: rgb(66,97,222); margin-right: 3px; padding-top: 2px; border-bottom: #ccc 1px solid; text-decoration: none}
+#ldlg td a:hover {background-image: none; color: #fff; background-color: #4261df}
+#ldlg td span a {color: #0000FF; border:0;}
+#ldlg td span a:hover {background-image: none; color: #FF0000; background-color: #FFFFFF}
+
+#ldlg p{padding:0;margin:0;}
+#ldlg th, #ldlg td{color:#333;border-collapse:collapse;border:1px solid #aabcfe; padding:3px;}
+#ldlg th{background-color:#b9c9fe;text-align:center;vertical-align:middle;font-weight:bold;}
+#ldlg td.bg{background-color:#e8edff;text-align:center;}
+#ldlg td.trg{text-align:right;vertical-align:middle;background-color:#e8edff;}
+#ldlg td.nob_t_b{border-top:none;border-bottom:none;}
+#ldlg td.nob_l_r{border-left:none;border-right:none;}
+#ldlg td.nobo{border:none;}
+#ldlg select.inp,#ldlg input.inp{height:22px;line-height:22px;font-size:1em;width:120px;}
+
+#train dd{width: 200px;height:28px;float:left;}
+#train dd label.label{font-size:1.1em;line-height:26px;height:26px;width:90px;float:left;text-align:right;color:#0E5080;margin-bottom:5px;}
+#train dd span{font-size:1.1em;line-height:26px;height:26px;width:110px;float:left;text-align:left;color: #000000;margin-bottom:5px;}
+#exper-form textarea.area{height:240px;width:420px;}
+
+.editdiv{text-align:right;}
+.down, .editbutton{border-right: #ccc 1px solid; padding-right: 6px; background-position: 50% bottom; border-top: #ccc 1px solid; padding-left: 6px; font-weight: bold; padding-bottom: 2px; border-left: #ccc 1px solid; color: rgb(66,97,222); margin-right: 3px; padding-top: 2px; border-bottom: #ccc 1px solid; text-decoration: none}
+.down:hover, .editbutton:hover{border:1px solid #690;color:#fff;background-color:#693;text-decoration:none;}
+
+/* table.rtable {font-size:13px;height:10px;line-height:10px;overflow:hidden;} */
+.file_rid a{padding:2px 9.5px;margin:2px;backgroud-repeat:repeat-x;text-decoration:none;}
+.file_rid a:hover{backgroud-repeat:repeat-x;text-decoration:none;color:black;}
+#file_bot{width:793px;margin-top:-23px; background-color:#d0e5f5; border:1px solid #a6c9e2; height:21px;}
+#div_type{backgroud-repeat:repeat-x;}
+
+#downTag dd input.inp,#downTag dd select.inp{float:right;border:1px solid #628EB1;height:22px;line-height:22px;margin-left:5px;width:100px;font-size:1em;}
+#downTag dd label.label{font-size:1.1em;line-height:26px;height:26px;width:190px;float:left;text-align:left;color:#0E5080;margin-bottom:5px;}
+
+/* 分页 */
+.pagination{text-align:right;float:right;padding-bottom:5px;}
+.pagination a, .pagination a:link, .pagination a:visited{padding:2px 5px;margin:2px;border:1px solid #999;background-color:#ccc;text-decoration:none;color:#693;}
+.pagination a:hover, .pagination a:active{border:1px solid #690;color:#fff;background-color:#693;text-decoration:none;}
+.pagination span.current{padding:2px 5px;margin:2px -2px 2px 2px;border:1px solid #690;font-weight:bold;background-color:#693;color:#fff;}
+.pagination span.disabled{padding:2px 5px;margin:2px;border:1px solid #eee;background-color:#fff;color:#ddd;}
+.pagination b{padding:0 2px;color:#f00}

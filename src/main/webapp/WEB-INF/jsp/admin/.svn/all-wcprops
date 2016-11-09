@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/!svn/ver/32/gom/src/main/webapp/WEB-INF/jsp/admin
+END
+logs.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/jsp/admin/logs.jsp
+END
+tree_config.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/30/gom/src/main/webapp/WEB-INF/jsp/admin/tree_config.jsp
+END
+config.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/32/gom/src/main/webapp/WEB-INF/jsp/admin/config.jsp
+END
+ztree.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/35/gom/src/main/webapp/WEB-INF/jsp/admin/ztree.jsp
+END
+resources.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/14/gom/src/main/webapp/WEB-INF/jsp/admin/resources.jsp
+END
+group.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/jsp/admin/group.jsp
+END
+category.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/jsp/admin/category.jsp
+END
+process.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/jsp/admin/process.jsp
+END
+basic_tree.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/!svn/ver/2/gom/src/main/webapp/WEB-INF/jsp/admin/basic_tree.jsp
+END
+users.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/22/gom/src/main/webapp/WEB-INF/jsp/admin/users.jsp
+END
+assets.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/35/gom/src/main/webapp/WEB-INF/jsp/admin/assets.jsp
+END
+user_config.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/22/gom/src/main/webapp/WEB-INF/jsp/admin/user_config.jsp
+END

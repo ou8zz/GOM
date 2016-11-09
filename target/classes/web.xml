@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+	<display-name>GOM</display-name>
+	<description>SQE SERVICE GOM</description>
+
+	<!-- Filters -->
+	<filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>com.sqe.gom.web.filter.EncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	<filter>
+		<filter-name>authority</filter-name>
+		<filter-class>com.sqe.gom.web.filter.AuthenticationFilter</filter-class>
+		<init-param>
+			<param-name>paths</param-name>
+			<param-value>/app/,/admin/</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>*.htm</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>authority</filter-name>
+		<url-pattern>/app/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>authority</filter-name>
+		<url-pattern>/admin/*</url-pattern>
+	</filter-mapping>
+
+	<!-- Spring-Security Filter -->
+	<filter>
+	  <filter-name>springSecurityFilterChain</filter-name>
+	  <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+	</filter>
+	<filter-mapping>
+	  <filter-name>springSecurityFilterChain</filter-name>
+	  <url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<!-- JFreeChatr -->
+	<servlet>
+		<servlet-name>DisplayChart</servlet-name>
+		<servlet-class>org.jfree.chart.servlet.DisplayChart</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DisplayChart</servlet-name>
+		<url-pattern>/servlet/DisplayChart</url-pattern>
+	</servlet-mapping>
+
+	<!-- Spring Security -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/config/gom-service.xml,/WEB-INF/config/gom-servlet.xml,/WEB-INF/config/gom-security.xml</param-value>
+	</context-param>
+	<listener>
+	    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	
+	<!-- spring-security 一个用户只能登陆一次 监听器 -->
+	<listener> 
+        <listener-class>org.springframework.security.web.session.HttpSessionEventPublisher</listener-class> 
+    </listener>
+    
+	<!-- Servlets -->
+	<servlet>
+		<servlet-name>gom</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value></param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>gom</servlet-name>
+		<url-pattern>*.htm</url-pattern>
+	</servlet-mapping>
+
+	<!-- welcome page -->
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	<jsp-config>
+		<jsp-property-group>
+			<description>HTML Encoding</description>
+			<url-pattern>*.html</url-pattern>
+			<el-ignored>true</el-ignored>
+			<page-encoding>utf-8</page-encoding>
+			<scripting-invalid>true</scripting-invalid>
+		</jsp-property-group>
+	</jsp-config>
+
+	<!-- 错误页面 -->
+	<error-page>
+		<error-code>403</error-code>
+		<location>/denyAccess.html</location>
+	</error-page>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/error_404.html</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/error_500.html</location>
+	</error-page>  
+
+</web-app>

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/!svn/ver/31/gom/src/test/java/com/sqe/gom/web
+END
+BorrowContrallerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/web/BorrowContrallerTest.java
+END
+TrainingContrallerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/web/TrainingContrallerTest.java
+END
+CategoryContrallerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/web/CategoryContrallerTest.java
+END
+ResponsibilityControllerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/web/ResponsibilityControllerTest.java
+END
+UserContrallerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/web/UserContrallerTest.java
+END
+AssetContrallerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/web/AssetContrallerTest.java
+END
+ProductContrallerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/web/ProductContrallerTest.java
+END
+ProjectContrallerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/!svn/ver/2/gom/src/test/java/com/sqe/gom/web/ProjectContrallerTest.java
+END
+ResourceContrallerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/!svn/ver/31/gom/src/test/java/com/sqe/gom/web/ResourceContrallerTest.java
+END
